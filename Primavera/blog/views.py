@@ -18,5 +18,4 @@ def posting(request):
         new = Post.objects.create(image = image, title = title, description = description, date = date)
         new.save()
         return redirect('blog:posts')
-        
     return render(request, 'post_posting/posting.html',{})
