@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "phonenumber_field",
-    "blog.apps.BlogConfig",
-    "projects_primavera.apps.Projects_primaveraConfig",
+    'blog.apps.BlogConfig',
+    'projects_primavera.apps.Projects_primaveraConfig',
 ]
 
 
