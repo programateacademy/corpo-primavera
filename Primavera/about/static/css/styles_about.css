@@ -2,37 +2,4 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.title-about {
-    color: #87045F;
-    font-weight: 700;
-}
 
-.card-about {
-    background-color: #F5A601;
-    opacity: .8;
-}
-
-.card-vision {
-    background-color: #B0DC8D;
-}
-
-.cvision {
-    height: 250px;
-    color: white;
-    font-size: 50px;
-    margin: 20px;
-}
-
-.text-vision {
-    background-color: #B0DC8D;
-}
-
-#vision {
-    background-image: url('https://transferencia.tec.mx/wp-content/uploads/2021/09/AdobeStock_382832673.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
-
-.p-vision {
-    font-size: medium ;
-}
