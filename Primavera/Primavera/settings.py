@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'forms.apps.FormsConfig',
-    'news.apps.NewsConfig',
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
     'Accounts.apps.AccountsConfig',
