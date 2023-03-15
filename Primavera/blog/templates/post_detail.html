@@ -2,11 +2,15 @@
 {% load static %}
 
         {% block content %}
-        <h1 style="color:#000000">Post</h1>
-
-        <h2 style="color:#000000">{{post.title}}</h2>
-        <h4 style="color:#000000">{{post.date}}</h4>
-
-        <p style="color:#000000" >{{post.description|safe}}</p>
+        <img src= "{% static '13.png' %}" class="img-fluid" alt="...">
         <img src ="{{post.image.url}}" alt="{{post.title}}">
+        <div class="card">
+                <h5 class="card-header">Noticias Corporación Primavera</h5>
+                <div class="card-body">
+                  <h5 class="card-title">{{post.title}}</h5>
+                  <h6>{{post.date}}</h6>
+                  <p class="card-text">{{post.description|safe}}</p>
+                </div>
+              </div>
+
         {% endblock %}

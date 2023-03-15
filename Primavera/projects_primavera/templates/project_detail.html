@@ -1,11 +1,16 @@
+
+{% extends 'layaout.html' %}
 {% load static %}
 
         {% block content %}
-        <h1 style="color:#000000">Project</h1>
-
-        <h2 style="color:#000000">{{project.title}}</h2>
-        <h4 style="color:#000000">{{project.date}}</h4>
-
-        <p style="color:#000000" >{{project.description|safe}}</p>
         <img src ="{{project.image.url}}" alt="{{project.title}}">
+        <div class="card">
+                <h5 class="card-header">Noticias Corporación Primavera</h5>
+                <div class="card-body">
+                  <h5 class="card-title">{{project.title}}</h5>
+                  <h6>{{project.date}}</h6>
+                  <p class="card-text">{{project.description|safe}}</p>
+                </div>
+              </div>
+
         {% endblock %}
