@@ -1,0 +1,18 @@
+.btn-group-vertical {
+    position: fixed !important;
+    float: right;
+    background-color: rgba(135, 4, 95, 0.8);
+    top: 20;
+    right: 0;
+    z-index: 999999999999999999;
+}
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-group-vertical a i {
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem;
+}
