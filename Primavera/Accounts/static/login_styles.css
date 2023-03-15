@@ -1,0 +1,49 @@
+body{
+    background-color: #870460bf;
+}
+input{
+    width: 250px;
+    height:30px;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color:#82F27E;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+
+}
+.btn{
+    margin-top: 40px;
+    margin-bottom:40px;
+    width: 100px;
+    height:37px;
+    border-radius: 10px;
+    background-color: #f5a801b6;
+    width:200px;
+    cursor: pointer;
+    color:whitesmoke;
+    border-color:#279704;
+    
+    
+}
+.btn:hover{
+    border-width: 3px;
+    font-size: 16px;
+}
+@media screen and (max-width:800px){
+    form{
+        width: 300px;
+    }
+
+}

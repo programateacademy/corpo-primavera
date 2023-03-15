@@ -1,0 +1,12 @@
+{% extends 'layaout.html' %}
+{% load static %}
+
+        {% block content %}
+        <h1 style="color:#000000">Post</h1>
+
+        <h2 style="color:#000000">{{post.title}}</h2>
+        <h4 style="color:#000000">{{post.date}}</h4>
+
+        <p style="color:#000000" >{{post.description|safe}}</p>
+        <img src ="{{post.image.url}}" alt="{{post.title}}">
+        {% endblock %}

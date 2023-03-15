@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+form input{
+    width:300px;
+}
+.form{
+    background-color: #87045F;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 450px;
+    border-radius: 7px;
+}
+.btn{
+    margin-top: 20px;
+    cursor: pointer;
+}

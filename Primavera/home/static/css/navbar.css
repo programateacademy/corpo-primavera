@@ -1,0 +1,15 @@
+/* Navbar*/
+.nav-link{
+    color: green;
+    font-size: 18px;
+    font-weight: bold
+}
+.navbar {
+    padding: 1rem;
+    background-color: white;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}

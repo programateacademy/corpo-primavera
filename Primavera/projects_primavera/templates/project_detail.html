@@ -1,0 +1,11 @@
+{% load static %}
+
+        {% block content %}
+        <h1 style="color:#000000">Project</h1>
+
+        <h2 style="color:#000000">{{project.title}}</h2>
+        <h4 style="color:#000000">{{project.date}}</h4>
+
+        <p style="color:#000000" >{{project.description|safe}}</p>
+        <img src ="{{project.image.url}}" alt="{{project.title}}">
+        {% endblock %}

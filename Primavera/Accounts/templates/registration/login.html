@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'login_styles.css'%}">
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="form">
+    <form method="POST" class="form-group">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn">LogIn</button>
+        <p>¿No tienes una cuenta? Registrate ahora: <a href="/register">crea una cuenta</a></p>
+        <p>¿Has olvidado tu contraseña?, haz click: <a href="{% url 'password_reset'%}">aquí</a></p>
+    </form>
+    </div>
+</body>
+</html>

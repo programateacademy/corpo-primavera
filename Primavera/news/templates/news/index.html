@@ -1,0 +1,7 @@
+{%load static%}
+{%for n in news%}
+    <h2>{{n.title}}</h2>
+    <img src="{{n.image.url}}" alt="{{news.title}}">
+    <p>{{n.description}}</p>
+
+{% endfor%}
