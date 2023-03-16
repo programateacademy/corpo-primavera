@@ -14,8 +14,8 @@
 }
 
 #vision {
-    background-image: url('https://transferencia.tec.mx/wp-content/uploads/2021/09/AdobeStock_382832673.jpeg');
-    background-size: cover;
+    background-image: url('../img/vision.jpg');
+    background-size: contain;
     background-position: center;
   }
 
