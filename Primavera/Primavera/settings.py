@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
     'forms.apps.FormsConfig',
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
@@ -46,6 +48,8 @@ INSTALLED_APPS = [
     "blog",
     "projects_primavera",
 ]
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 
 MIDDLEWARE = [
