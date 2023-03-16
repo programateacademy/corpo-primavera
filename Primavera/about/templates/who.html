@@ -1,8 +1,9 @@
 {% include 'bookstores.html' %}
+{% load static %}
 <!--Imagen-->
-{% block content %}
+{% block who %}
 <h1 class="text-who">¿Quiénes somos?</h1>
 <div class="card">
-    <img src="https://pbs.twimg.com/profile_banners/3149077197/1528045671/1500x500" class="card-img" alt="Imagen">
+    <img src="{% static 'img/sede.jpg' %}" class="card-img" alt="Imagen">
 </div>
 {% endblock %}
