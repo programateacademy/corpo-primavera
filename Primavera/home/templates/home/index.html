@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--CSS-->
     <link type= 'text/css' href={% static "css/home.css"%} rel="stylesheet"> 
+    <link type= 'text/css' href= "{% static 'css/navbar.css'%}" rel="stylesheet">
 </head>
 <body>
     <!--Banner-->
@@ -45,7 +46,7 @@
                     <p class="adolescentes-titulo">Adolecentes</p>
                 </div>
         </div>
-        <button type="button" class="btn btn-success btn2">Conocenos</button>
+        <a class="btn btn-success btn2" href="/about">Conocenos</a>
 </section>
 <!-- Donaciones -->
 <section class="blanco">
@@ -71,50 +72,18 @@
 
 <!--Noticias-->
 
-<div id="carouselExample" class="carousel slide">
-    <h1>Noticias</h1>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
-            </div>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto4.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn3 btn-info">Ver mas</a>
-            </div>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto6.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
-            </div>
-          </div>
-      </div>
+<!--foto-->
+<seccion class="foto">
+<div class="card text-bg-dark ">
+    <img src="media/foto35.jpg" class="card-img" alt="">
+    <div class="card-img-overlay">
+      <h5 class="card-title">En corporacion primavera</h5>
+      <p class="card-text">Las niñas y los niños se representan de manera simbólica y poética reconociendo sus habilidades y debilidades. para ayudarles con el acompañamiento de sus tareas. De esta forma aprendemos de sus iniciativas todos los días y gracias a esto las niñas, niños y adolescentes no se rinden, disfrutan de su barrio y sueñan con su futuro. 
+        y estamos felices de acompañarles en este proceso. 
+      </p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <button type="button" class="btn btn-success btn3">Mas nooticias</button>
   </div>
+</seccion>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
