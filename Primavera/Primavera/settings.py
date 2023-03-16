@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "phonenumber_field",
-    "blog",
-    "projects_primavera",
+    'blog.apps.BlogConfig',
+    'projects_primavera.apps.Projects_primaveraConfig',
 ]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ["security.W019"]
