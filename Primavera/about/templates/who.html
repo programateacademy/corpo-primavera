@@ -1,0 +1,9 @@
+{% include 'bookstores.html' %}
+{% load static %}
+<!--Imagen-->
+{% block who %}
+<h1 class="text-who">¿Quiénes somos?</h1>
+<div class="card">
+    <img src="{% static 'img/sede.jpg' %}" class="card-img" alt="Imagen">
+</div>
+{% endblock %}

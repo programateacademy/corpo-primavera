@@ -1,0 +1,12 @@
+#because {
+    background-image: url('../img/foto36.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:150px;
+}
+
+.cbecause {
+    height: 250px;
+    margin: 20px;
+    border-style: none;
+}

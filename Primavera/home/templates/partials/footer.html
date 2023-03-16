@@ -1,0 +1,24 @@
+{% load static %}
+{% block content %}
+
+
+<head>
+  <link type= 'text/css' href= "{% static 'css/footer.css'%}" rel="stylesheet">
+</head>
+
+<div class="card text-center container-fluid footer">
+   <div class="row">
+    <div class="card-body col-5 text-footer">
+      Av. Palacé #68-05, Aranjuez, Medellín, Aranjuez, Medellín, Antioquia Teléfono: 42116097
+    </div>
+    <div class="card-body col-7">
+      <ul class="container-social">
+          <li class="social"><a title="instagram" class="enlace" href="https://www.instagram.com/corpoprimavera/"><i class="fa fa-instagram"></i></a></li>
+          <li class="social"><a title="facebook" class="enlace" href="https://es-la.facebook.com/corporacion.primavera"><i class="fa fa-facebook-f"></i></a></li>
+          <li class="social"><a title="twitter" class="enlace" href="https://twitter.com/corpoprimavera?lang=es"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+   </div>
+</div>
+
+{% endblock %}

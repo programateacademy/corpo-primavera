@@ -1,0 +1,25 @@
+
+.cgeneral {
+    background-color: #B0DC8D;
+}
+
+.cvision {
+    height: 250px;
+    margin: 20px;
+}
+
+.text-general {
+    color: #87045F;
+    font-weight: 900;
+}
+
+#vision {
+    background-image: url('../img/vision.jpg');
+    background-size: contain;
+    background-position: center;
+  }
+
+.p-general {
+    color: black;
+    font-size: medium ;
+}

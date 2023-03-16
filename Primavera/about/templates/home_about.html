@@ -1,57 +1,11 @@
-{% extends 'layaout.html' %}
-{% load static %}
-{% block content %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <!--Meta responsive-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Quienes Somos</title>
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <!-- Static CSS-->
-        <link type='text/css' href={% static "css/home.css"%} rel="stylesheet">
-        <link type='text/css' href={% static "css/styles_about.css"%} rel="stylesheet">
-    </head>
-    <body>
-         <!--Banner-->
-         <div class="card mb-3">
-            <img src="https://pbs.twimg.com/media/FotxqXLXgAER5ss?format=jpg&name=medium" class="card-img-top" alt="...">
-            <div class="card-body text-center card-about">
-              <h5 class="card-title title-about">¿Quiénes somos?</h5>
-              <p class="card-text">Somos una organización no gubernamental que trabaja por los derechos de niños, adolescentes, jóvenes y mujeres en contexto de vulnerabilidad social</p>
-            </div>
-          </div>
-         <!--Imagen-->
-        <div class="card text-bg-dark">
-          <img src="https://pbs.twimg.com/profile_banners/3149077197/1528045671/1500x500" class="card-img" alt="Imagen">
-        </div>
-         <!--Vision-->
-         <div class="container text-center cvision">
-          <div class="row">   
-              <div class="col-sm-5 text-vision text-center">
-                  <h1>Vision</h1>
-                  <p class="p-vision">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-              </div>
-              <div  id="vision" class="col-sm-6 img-vision">     
-              </div>
-          </div>
-      </div>
-         <!--Mision -->
-         <div class="container text-center cvision">
-          <div class="row">  
-            <div  id="vision" class="col-sm-5">
-                     
-            </div> 
-              <div class="col-sm-6 text-vision text-center">
-                  <h1>Mision</h1>
-                  <p class="p-vision">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-              </div>
-          </div>
-      </div>
-    </body>
-</html>
-{% endblock %}
+{% include "layaout.html" %}
+{% include "bookstores.html"%}
+{% include "banner_about.html" %}
+{% include "who.html" %}
+{% include "vision.html" %}
+{% include "mission.html" %}
+{% include "description.html" %}
+{% include "because.html" %}
+{% include "statistics.html" %}
+{%include "form.html"%}
+{% include 'partials/footer.html'%}
