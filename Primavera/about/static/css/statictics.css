@@ -1,6 +1,10 @@
 #statictics {
-    background-image: url('https://transferencia.tec.mx/wp-content/uploads/2021/09/AdobeStock_382832673.jpeg');
+    background-image: url('../img/foto51.jpg');
     background-size: cover;
     background-position: center;
     border-radius:150px;
+}
+
+.cinv {
+    border-style: none;
 }
