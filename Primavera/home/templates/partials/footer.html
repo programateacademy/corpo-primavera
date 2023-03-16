@@ -1,5 +1,10 @@
-{% include 'bookstores.html' %}
+{% load static %}
 {% block content %}
+
+
+<head>
+  <link type= 'text/css' href= "{% static 'css/footer.css'%}" rel="stylesheet">
+</head>
 
 <div class="card text-center container-fluid footer">
    <div class="row">
@@ -15,6 +20,5 @@
     </div>
    </div>
 </div>
-</body>
-</html>
+
 {% endblock %}
