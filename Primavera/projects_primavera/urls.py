@@ -7,5 +7,5 @@ app_name = "projects_primavera"
 urlpatterns = [
     path("", render_projects, name = "projects"),
     path("<int:project_id>", project_detail, name ="project_detail"),
-    path('posting',views.posting, name='posting'),
+    path('postingProject',views.posting, name='postingProject'),
     ]

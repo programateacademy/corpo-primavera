@@ -1,10 +1,12 @@
-.btn-group-vertical {
+
+#group{
+    box-sizing: border-box;
     position: fixed !important;
     float: right;
     background-color: rgba(135, 4, 95, 0.8);
-    top: 20;
+    top: 700px;
     right: 0;
-    z-index: 999999999999999999;
+    z-index: 99;
 }
 #content {
     position: relative;
@@ -16,3 +18,20 @@
     font-size: 2rem;
     padding: .5rem;
 }
+
+@media (max-width: 727px) {
+    #group {
+    position: fixed !important;
+        top: 350px;
+        right: 0;
+        width: 50px;
+    }
+    #group a {
+      font-size: 0.8rem; 
+      padding: 5px; 
+    }
+    #group i {
+      font-size: 1.5rem; 
+    }
+  }
+  
