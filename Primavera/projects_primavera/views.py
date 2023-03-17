@@ -21,4 +21,4 @@ def posting(request):
         new.save()
         return redirect('projects_primavera:projects')
         
-    return render(request, 'project_posting/posting.html',{})
+    return render(request, 'project_posting/postingProject.html',{})

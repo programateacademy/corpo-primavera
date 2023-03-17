@@ -1,0 +1,17 @@
+body {
+    background-image: url(../img/fond_new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.form-color {
+    background: rgba(0, 128, 0, 0.555);
+}
+
+.title-new {
+    font-weight: 900;
+    color: #87045F;
+}
+
