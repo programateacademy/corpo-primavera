@@ -25,6 +25,21 @@ p.parrafo{
     font-weight: bold;
     font-size:xx-large;
 }
+
+.page-container {
+    margin-left: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 50px 20px; 
+}
+
+.card {
+    margin-right: 20px;
+}
+
 hr{
     color: #fff;
 }
@@ -39,4 +54,10 @@ hr{
 #img-post{
     margin: auto;
     display: block;
+}
+.card-date{
+    margin: 0 20px  20px;
+}
+.card-text{
+    margin: 0 20px 50px 20px;
 }

@@ -10,7 +10,6 @@
           <div class="carousel-item active">
             <img src="{% static 'img/car4.png' %}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <p class="parrafo" >¡No estás solo! La Corporación está aquí para ayudarte a superar los obstáculos y lograr un futuro mejor</p>
               </div>
           </div>
 
@@ -41,6 +40,8 @@
 
     <h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
     <hr>
+    <div class="page-container">
+      <div class="card-container">
     <div class="d-flex flex-wrap">
         {% for project in projects %}
         <div class="card" style="width: 18rem;">
@@ -52,5 +53,8 @@
             </div>
           </div>
         {% endfor %}
+      </div>
+    </div>
+    </div>
 {% include 'partials/footer.html'%}
 {% endblock %}
