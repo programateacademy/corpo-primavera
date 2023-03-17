@@ -1,3 +1,26 @@
+
+.titulo{
+  background: rgba(0, 128, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  font-size:xx-large;
+  font-weight: bold;
+
+}
+.parrafo{
+  background: #F5A601;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
 .btn {
         position:relative;
         left:45px;
