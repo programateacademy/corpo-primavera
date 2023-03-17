@@ -105,6 +105,18 @@
         top:100px;
       }
 
+      .carousel-inner{
+        color: #279704;
+        font-size: 20px;
+        font-weight: bold;
+        position:relative;
+        top:110px;
+      }
+
+      .carousel-inner .btn3{
+        color:#87045f
+      }
+
       .foto .card-title{
         font-size: 25px;
         color: black;
@@ -123,7 +135,7 @@
 
      .foto .card {
       position:relative;
-      top:100px;
+      top:120px;
       opacity: 75%;
      
      }
@@ -138,7 +150,6 @@
             
         }
         
-
         .verde2 .niños {
             position: relative;
             left:80px;
@@ -173,7 +184,16 @@
         background-color: white;
       }
 
+      .carousel-inner{
+        position:relative;
+        top:-200px;
    } 
+
+   .foto .card {
+    position:relative;
+    top:-140px;
+   
+   }
 
    @media only screen and (max-width: 662px) {
     .foto .card-title{
