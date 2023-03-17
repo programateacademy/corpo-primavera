@@ -48,6 +48,8 @@
 <hr>
 <h5 class="card-header"id="title-header">Noticias Corporación Primavera</h5>
 <hr>
+<a class="nav-link" href="{% url 'blog:posting' %}"><button type="button" class="btn btn-success"><i class="bi bi-plus-circle-dotted add"></i> Nueva Noticia </button></a>
+<hr>
     <div class="d-flex flex-wrap">
         {% for post in posts %}
         <div class="card" style="width: 18rem;">

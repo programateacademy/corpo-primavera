@@ -1,29 +1,37 @@
+{% include "layaout.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'posting_styles.css'%}">
-    <title>Posting</title>
-</head>
-<body>
-    <form method="POST" enctype="multipart/form-data" id="image_form">
-        <div class="parent_container">
-            {% csrf_token %}
-            <label for="title">Título</label>
-            <input type="text" id="title" name="title">
-            <label for="description">Descripción</label>
-            <input type="text" id="description" name="description">
-            <label for="image">Selecciona una imagen: </label>
-            <input type="file" id="image" name="image">
-            <label for="date">Fecha</label>
-            <input type="date" id="date" name="date">
-            <button type="submit" form="image_form">Enviar</button>
+{% include "post_posting/libPosting.html" %}
+{% block new_Posting %}
+    <div class="container justify-content-center align-items-center p-5 ">
+        <div class="row vh-100 justify-content-center align-items-center ">
+            <div class="col-xs-3 col-lg-6 form-color p-4 border border-success rounded">    
+                <div class="justify-content-center">
+                <h1 class="text-center title-new"> Crear Noticia Nueva </h1>
+                <img src="{% static 'img/edit_new.png' %}" class="img-fluid img-edit" alt="Imagen">
+                </div>
+                <form method="POST" enctype="multipart/form-data" id="image_form">
+                    {% csrf_token %}
+                    <div class="form-group mb-3 fw-bold text-white">
+                        <label for="title">Título</label>
+                        <input type="text" id="title" class="form-control" name="title">
+            
+                        <label for="description">Descripción</label>
+                        <input type="text" id="description" class="form-control" name="description">
+                    
+                        <label for="image">Selecciona una imagen: </label>
+                        <input type="file" id="image" class="form-control" name="image">
+                    
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" class="form-control" name="date">
+                    </div> 
+                    <button type="submit" class="btn btn-success fw-bold" form="image_form">Publicar</button>
+                </form>
+            </div>    
         </div>
-    </form>
+    </div>
+    {% include 'partials/footer.html'%}
 </body>
 </html>
+{% endblock %}
 
 

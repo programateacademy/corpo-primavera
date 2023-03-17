@@ -1,0 +1,20 @@
+body {
+    background-image: url(../img/66.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.form-color {
+    background: rgba(0, 128, 0, 0.555);
+}
+
+.title-new {
+    font-weight: 900;
+    color: #87045F;
+}
+
+.add {
+    font-size: 30px;
+}
