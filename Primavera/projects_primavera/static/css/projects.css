@@ -7,7 +7,7 @@
     font-weight: bold;
 }
 p.parrafo{
-    background: rgba(135, 4, 95, 0.5);;
+    background: rgba(135, 4, 95, 0.9);
     color: #fff;
     font-weight: bold;
     padding: 5px;
@@ -25,6 +25,21 @@ p.parrafo{
     font-weight: bold;
     font-size:xx-large;
 }
+
+.page-container {
+    margin-left: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 50px 20px; 
+}
+
+.card {
+    margin-right: 20px;
+}
+
 hr{
     color: #fff;
 }
@@ -40,4 +55,13 @@ hr{
     margin: auto;
     display: block;
 }
+<<<<<<< HEAD
+.card-date{
+    margin: 0 20px  20px;
+}
+.card-text{
+    margin: 0 20px 50px 20px;
+}
+=======
 
+>>>>>>> main
