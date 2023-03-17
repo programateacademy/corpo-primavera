@@ -46,7 +46,11 @@
     <hr>
     <h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
     <hr>
+    {% if user.is_superuser%}
     <a class="nav-link" href="{% url 'projects_primavera:postingProject' %}"><button type="button" class="btn btn-success"><i class="bi bi-plus-circle-dotted add"></i> Nuevo Proyecto </button></a>
+    {% else %}
+
+    {% endif %}
     <hr>
     <div class="d-flex flex-wrap">
         {% for project in projects %}
