@@ -12,19 +12,30 @@
     font-weight: bold;
     padding: 5px;
 }
+
 .btn-success{
     color: #fff;
     background-color: #279704;
     border-color: #279704;
 }
+.d-flex flex-wrap{
+    align-items: center;
+}
+
 #title-header{
-    background: #279704;
+    background:  #279704;
     text-align: center;
     padding: 10px;
     color: #fff;
     font-weight: bold;
     font-size:xx-large;
 }
+title-head{
+    color: #FFFFFF;
+    background-color: red;
+}
+
+
 hr{
     color: #fff;
 }
@@ -36,6 +47,7 @@ hr{
     font-weight: bold;
     font-size:xx-large;
 }
+
 #img-post{
     margin: auto;
     display: block;
