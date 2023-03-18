@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404,redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import permission_required
 from .models import Post
+from datetime import datetime
 
 def render_posts(request):
-    posts = Post.objects.all()
+    posts = Post.objects.filter(date__lte=datetime.now()).order_by('-date')
     return render(request, 'posts.html', {'posts':posts})
 
 def post_detail(request, post_id):
@@ -12,6 +13,7 @@ def post_detail(request, post_id):
 
 @permission_required('blog.add_post')
 def posting(request):
+    posting = Post.objects.all().order_by('-date')
     if request.method == 'POST':
         title = request.POST['title']
         description = request.POST['description']
