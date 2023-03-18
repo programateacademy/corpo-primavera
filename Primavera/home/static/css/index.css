@@ -33,7 +33,6 @@ hr{
 }
 
 
-
 .btn {
         position:relative;
         left:45px;
@@ -48,12 +47,11 @@ hr{
     }
 
     h1{
-        color: #87045f;
-        font-size: 30px;
-        font-weight: bold;
-        align-items: center;
-        display:flex;
-        justify-content: center;
+      background: #87045f;
+      color: #fff;
+      padding: 20px;
+      font-size:xx-large;
+      font-weight: bold;
     }
 
     h3{

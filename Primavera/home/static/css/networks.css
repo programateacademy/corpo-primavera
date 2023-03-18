@@ -4,9 +4,11 @@
     position: fixed !important;
     float: right;
     background-color: rgba(135, 4, 95, 0.8);
-    top: 700px;
+    top: 10%;
     right: 0;
     z-index: 99;
+    left: 0;
+    transform: translateY(-50%);
 }
 #content {
     position: relative;
@@ -21,10 +23,10 @@
 
 @media (max-width: 727px) {
     #group {
-    position: fixed !important;
-        top: 350px;
-        right: 0;
-        width: 50px;
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
     }
     #group a {
       font-size: 0.8rem; 
