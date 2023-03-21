@@ -30,10 +30,12 @@ p.parrafo{
     margin-left: 20px;
 }
 
-.card-container {
+#card-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px 20px 50px 20px; 
+    margin: 20px 20px 50px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -55,13 +57,21 @@ hr{
     margin: auto;
     display: block;
 }
-<<<<<<< HEAD
 .card-date{
     margin: 0 20px  20px;
 }
 .card-text{
     margin: 0 20px 50px 20px;
 }
-=======
 
->>>>>>> main
+
+@media (max-width: 768px) {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      flex: 0 1 calc(50% - 1rem);
+    }
+  }
