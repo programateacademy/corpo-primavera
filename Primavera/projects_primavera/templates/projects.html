@@ -40,26 +40,24 @@
 
     <h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
     <hr>
-    <div class="page-container">
-      <div class="card-container  mx-auto mt-4">
-    
-        <div class="card-container mx-auto mt-4 text-center">
-            {% for project in projects %}
-            <div class="card m-3 " style="width: 18rem;">
-                <img src="{{project.image.url}}" class="card-img-top img-fluid" alt="..." id="img-tar">
-                <div class="card-body">
-                  <h5 class="card-title">{{project.title}}</h5>
-                  <p class="card-text">{{project.description|truncatechars:100}}</p>
-                  <div class="mt-auto">
-                    <a href="{% url 'projects_primavera:project_detail' project.id  %}" class="btn btn-success">Ver más</a>
+    <div class="card-container mx-auto mt-4 text-center" id="card-container">
+      <div class="row justify-content-center">
+          {% for project in projects %}
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                  <img src="{{project.image.url}}" class="card-img-top img-fluid rounded" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">{{project.title}}</h5>
+                      <h6 class="card-date">{{post.date}}</h6>
+                      <p class="card-text">{{project.description|truncatechars:100}}</p>
                   </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    
+                  <div class="card-footer">
+                      <a href= "{% url 'projects_primavera:project_detail' project.id  %}" class="btn btn-success">Ver más</a>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
       </div>
     </div>
-    
 {% include 'partials/footer.html'%}
 {% endblock %}

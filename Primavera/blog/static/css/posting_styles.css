@@ -2,6 +2,7 @@ body {
     background-image: url(../img/fond_new.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
     
 }
 
@@ -15,3 +16,14 @@ body {
     color: #87045F;
 }
 
+
+@media (max-width: 768px) {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      flex: 0 1 calc(50% - 1rem);
+    }
+  }

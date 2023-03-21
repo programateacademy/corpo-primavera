@@ -38,26 +38,27 @@
         </button>
       </div>
 <!-- ...........................Tarjetas de Noticias........................................ -->
-<h5 class="card-header"id="title-header"><span id="title-head"> Noticias Corporación Primavera</span></h5>
+<h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
 <hr>
-<div class="page-container">
-  <div class="card-container mx-auto mt-4 text-center">
-
-    <div class="d-flex flex-wrap justify-content-center">
-        {% for post in posts %}
-        <div class="card m-3" style="width: 18rem;">
-            <img src="{{post.image.url}}" class="card-img-top  img-fluid rounded" alt="..." id="img-tar">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">{{post.title}}</h5>
-              <h6 class="card-date">{{post.date}}</h6>
-              <p class="card-text">{{post.description|truncatechars:100}}</p>
-              <div class="mt-auto">
-                <a href="{% url 'blog:post_detail' post.id  %}" class="btn btn-success">Ver más</a>
+<div class="card-container mx-auto mt-4 text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      {% for post in posts %}
+      <div class="col">
+          <div class="card h-100">
+              <img src="{{post.image.url}}" class="card-img-top img-fluid rounded" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">{{post.title}}</h5>
+                  <h6 class="card-date">{{post.date}}</h6>
+                  <p class="card-text">{{post.description|truncatechars:100}}</p>
               </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+              <div class="card-footer">
+                  <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-success">Ver más</a>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
 
   </div>
 </div>

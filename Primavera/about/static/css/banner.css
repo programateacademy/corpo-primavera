@@ -17,3 +17,11 @@
 hr{
     color:#fff;
 }
+#title-what{
+    background:  #87045F;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size:xx-large;
+}
