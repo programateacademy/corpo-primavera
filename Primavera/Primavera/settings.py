@@ -11,22 +11,17 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 import os
-import environ
-import dotenv
-from dotenv import load_dotenv
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-environ.Env.read_env()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
+SECRET_KEY = 'django-insecure-ueku34gol-@)1=6_*sd*a2a3z=qqa2vx+%ok%e@f*!@(n^^%o&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -154,4 +149,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pruebasbackendproudman37@gmail.com'
-EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
+
