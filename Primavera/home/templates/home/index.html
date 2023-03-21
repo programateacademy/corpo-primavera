@@ -157,6 +157,16 @@
     </div>
   </div>
 </seccion>
+<div class="form_body">
+  <div class="form">
+      <form method="POST">
+          {% csrf_token%}
+          {{form}}
+          <button type="submit" class="btn_form">Enviar</button>
+      </form>
+  </div>
+</div>
+
 
 {% include 'partials/footer.html'%}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
