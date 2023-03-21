@@ -1,11 +1,57 @@
+{% extends 'layaout.html' %}
 {% load static %}
+{% block content %}
+<head>
+  <link type= 'text/css' href= "{% static 'css/projects.css'%}" rel="stylesheet">
+</head>
 
-        {% block content %}
-        <h1 style="color:#000000">Project</h1>
+      <!-- ...........................CARRUSEL........................................ -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <h2 style="color:#000000">{{project.title}}</h2>
-        <h4 style="color:#000000">{{project.date}}</h4>
+          <div class="carousel-item active">
+            <img src="{% static 'img/11.png' %}"   class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">¡Últimos Proyectos de nuestra Corporación Primavera!</h5>
+              <p class="parrafo" >¡Siempre hay una razón para sonreír! Con la ayuda de la fundación, podemos hacer realidad nuestros sueños</p>
+            </div>
+          </div>
 
-        <p style="color:#000000" >{{project.description|safe}}</p>
-        <img src ="{{project.image.url}}" alt="{{project.title}}">
-        {% endblock %}
+          <div class="carousel-item">
+            <img src="{% static 'img/12.png' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">¡Últimos Proyectos de nuestra Corporación Primavera!</h5>
+              <p class="parrafo" >¡Siempre hay una razón para sonreír! Con la ayuda de la fundación, podemos hacer realidad nuestros sueños</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="{% static 'img/133.png'%}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="parrafo" >¡Juntas somos más fuertes! La Corporación nos ayuda a alcanzar nuestro potencial y nos brinda el apoyo que necesitamos¡</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- ...........................Project........................................ -->
+
+        <div class="card">
+                <h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
+                <div class="card-body">
+                  <img src ="{{project.image.url}}" class="img-thumbnail" id="img-post"  alt="{{project.title}}">
+                  <hr>
+                  <h5 class="card-title" id="title-card">{{project.title}}</h5>
+                  <h6 class="card-date">{{project.date}}</h6>
+                  <p class="card-text">{{project.description|safe}}</p>
+                </div>
+              </div>
+{% include 'partials/footer.html'%}
+{% endblock %}
