@@ -74,6 +74,8 @@ hr{
         top:0.5px;
     }
 
+    /*Que hacemos*/
+
     .verde2 {
         display: flex;
         flex-direction: column;
@@ -105,6 +107,8 @@ hr{
         font-size: 20px;
         font-weight: bold;
       }
+
+      /*Donaciones*/
 
       .donaciones .corazon-titulo {
         color: #279704;
@@ -141,6 +145,8 @@ hr{
         top:100px;
       }
 
+      /*Carousel*/
+
       #carousel-news{
         display: block;
         justify-content: center;
@@ -151,12 +157,14 @@ hr{
         position:relative;
         top:100px;
         left:550px;
-       background-color: #b0dc8d;
+        background-color: #b0dc8d;
       }
 
       .carousel-inner .btn3{
         color:#87045f
       }
+
+      /*Card*/
 
       .foto .card-title{
         font-size: 25px;
@@ -169,7 +177,6 @@ hr{
       .foto .card-text{
         font-size: 20px;
         color:black;
-
         font-weight: bold;
         padding: 10px;
       }
@@ -177,10 +184,13 @@ hr{
      .foto .card {
       display: block;
       position:relative;
-      top:140px;
+      top:100px;
       opacity: 75%;
      
      }
+
+     /*Form*/
+
      .form_body{
       display:flex;
       flex-direction: column;
