@@ -180,17 +180,17 @@ hr{
       flex-direction: column;
       align-items: center;
   }
-form{
+      form{
       display:flex;
       flex-direction: column;
       align-items: center;
       color: white;
       font-weight: bold;
   }
-form input{
+      form input{
       width:300px;
   }
-.form{
+      .form{
       background-color: #87045F;
       display:flex;
       align-items: center;
@@ -201,7 +201,7 @@ form input{
       margin-top: 200px;
       margin-bottom: 100px;
   }
-.btn_form{
+      .btn_form{
       background-color: white;
       margin-top: 20px;
       cursor: pointer;
