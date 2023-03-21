@@ -141,12 +141,17 @@ hr{
         top:100px;
       }
 
-      .carousel-inner{
+      #carousel-news{
+        display: block;
+        justify-content: center;
+        align-items: center;
         color: #279704;
         font-size: 20px;
         font-weight: bold;
         position:relative;
-        top:110px;
+        top:100px;
+        left:550px;
+       background-color: #b0dc8d;
       }
 
       .carousel-inner .btn3{
@@ -158,7 +163,7 @@ hr{
         color: black;
         align-self: center;
         font-weight: bold;
-        padding: 10px;
+        
       }
 
       .foto .card-text{
@@ -170,15 +175,13 @@ hr{
       }
 
      .foto .card {
+      display: block;
       position:relative;
-      top:120px;
+      top:140px;
       opacity: 75%;
      
      }
 
-    
-
-    
     @media only screen and (max-width: 762px) {
         
         .verde{
@@ -219,10 +222,7 @@ hr{
         top:-230px;
         background-color: white;
       }
-
-      .carousel-inner{
-        position:relative;
-        top:-200px;
+        
    } 
 
    .foto .card {
@@ -254,4 +254,4 @@ hr{
       font-size: 11px;
     }
   }
-}
+

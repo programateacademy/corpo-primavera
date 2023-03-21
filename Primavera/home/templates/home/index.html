@@ -105,14 +105,13 @@
 
 <!--Noticias-->
 <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-        <h1>Noticias</h1>
+    <div class="carousel-inner" id="carousel-news">
       <div class="carousel-item active">
         <div class="card" style="width: 20rem;">
             <img src="media/foto1.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
             </div>
           </div>
       </div>
@@ -121,7 +120,7 @@
             <img src="media/foto4.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info">Ver mas</a>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
             </div>
           </div>
       </div>
@@ -130,7 +129,7 @@
             <img src="media/foto6.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
             </div>
           </div>
       </div>
@@ -144,7 +143,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
 
 <!--foto-->
 <seccion class="foto">
