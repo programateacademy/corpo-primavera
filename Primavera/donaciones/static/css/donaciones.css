@@ -1,0 +1,67 @@
+#textodonaciones{
+    color: black;
+    font-size: 22px;
+    
+}
+
+#titledonaciones{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;}
+
+.blanco{
+    background-color: #C4F4B9;
+}
+
+#porquedonar-titulo {
+    color: #cd6200;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+#preguntas-titulo {
+    color: #279704;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+ #quehacemos-titulo{
+    color: #87045f;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #title-que{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #title-donar{
+    color: #87045f;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #text-donar{
+    color: black;
+    font-size: 20px;
+  }
+
+  #deseas-titulo{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #texto-donacion{
+    color: black;
+    font-size: 20px;
+  }
