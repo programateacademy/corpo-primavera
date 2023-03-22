@@ -103,56 +103,41 @@
             </div>
     </div>
 </section>
-
 <!--Noticias-->
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner" id="carousel-news">
-      <div class="carousel-item active">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
+<section class="noticias seccion-clara" id="news">
+  <div class="container text-center">
+    <h1 class="title" id="title-que">Noticias</h1>
+      <div class="row">
+          <!--Noticia1-->
+          <div class="columna col-12 col-md-4">
+            <img src="media/foto4.jpeg" width="220px">
+              <p class="experiencia-titulo">Titulo de la Noticia</p>
               <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
-            </div>
+          </div>
+          <!--Noticia2-->
+          <div class="columna col-12 col-md-4">
+              <img src="media/foto1.jpeg" width="220px">
+              <p class="experiencia-titulo">Titulo de la noticia</p>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
+          </div>
+          <!--noticia3-->
+          <div class="columna col-12 col-md-4">
+            <img src="media/foto6.jpeg"  width="220px">
+              <p class="experiencia-titulo">Titulo de la noticia</p>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
+              </div>
           </div>
       </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto4.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
-            </div>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto6.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
-            </div>
-          </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+</section>
 
 <!--foto-->
-<seccion class="foto">
+<seccion class="foto" id="foto">
 <div class="card text-bg-dark ">
     <img src="media/foto35.jpg" class="card-img" alt="">
     <div class="card-img-overlay">
       <h5 class="card-title">En corporacion primavera</h5>
       <p class="card-text">Las niñas y los niños se representan de manera simbólica y poética reconociendo sus habilidades y debilidades. para ayudarles con el acompañamiento de sus tareas. De esta forma aprendemos de sus iniciativas todos los días y gracias a esto las niñas, niños y adolescentes no se rinden, disfrutan de su barrio y sueñan con su futuro. 
-        y estamos felices de acompañarles en este proceso      </p>
+        y estamos felices de acompañarles.  </p>
     </div>
   </div>
 </seccion>
