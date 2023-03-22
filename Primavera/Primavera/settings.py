@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'blog.apps.BlogConfig',
     'projects_primavera.apps.Projects_primaveraConfig',
+   
 ]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ["security.W019"]

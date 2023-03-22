@@ -29,6 +29,7 @@ urlpatterns = [
     path('',include('forms.urls')),
     path('about/',include('about.urls')),
     path('blog/', include('blog.urls')),
-    path('projects_primavera/', include('projects_primavera.urls'))
+    path('projects_primavera/', include('projects_primavera.urls')),
+    
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
