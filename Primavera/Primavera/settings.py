@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -44,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "phonenumber_field",
+    'phonenumber_field',
     'blog.apps.BlogConfig',
     'projects_primavera.apps.Projects_primaveraConfig',
+    'donaciones.apps.DonacionesConfig',
+   
 ]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ["security.W019"]
@@ -116,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-co'
 
 TIME_ZONE = 'UTC'
 
@@ -130,8 +133,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR =(os.path.join(BASE_DIR, 'about/static/'),) 
-STATICFILES_DIR =(os.path.join(BASE_DIR, 'home/static/'),) 
+STATICFILES_DIR =(os.path.join(BASE_DIR, 'about/static/'),)
+STATICFILES_DIR =(os.path.join(BASE_DIR, 'home/static/'),)
+STATICFILES_DIR =(os.path.join(BASE_DIR, 'donaciones/static/'),)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
@@ -149,5 +153,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pruebasbackendproudman37@gmail.com'
-
 

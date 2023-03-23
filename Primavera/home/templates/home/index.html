@@ -11,21 +11,53 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--CSS-->
-    <link type= 'text/css' href="{% static 'css/home.css'%}" rel="stylesheet">
-    <link type= 'text/css' href= "{% static 'css/navbar.css'%}" rel="stylesheet">
+    <link type= 'text/css' href="{% static 'css/index.css'%}" rel="stylesheet">
 </head>
 <body>
-    <!--Banner-->
-<div class="card d-flex;">
-    <img class="card-img-top" src="https://pbs.twimg.com/media/FibDObUWQAMC-FZ?format=jpg&name=medium" alt="Card image cap">
-    <div class="card-body">
-    <button type="button" class="btn btn-success">Haz parte del cambio</button>
-    </div>
+    <!--Banner carrusel-->
+<section class="banner" id="banner">
+
+  <div id="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carrousel-in">
+          <div class="carousel-item active">
+            <img src="{% static 'img/Carrusel_1.png' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="{% static 'img/Carrusel-2.png' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">Uniendo fuerzas para un futuro mejor </h5>
+              <p class="parrafo" >Corporación Primavera marca la diferencia</p>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/Carrusel-3.png'%}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">En el corazón de Medellín</h5>
+              <p class="parrafo" >Nuestra Corporación trabaja incansablemente para mejorar la vida de mujeres, niños y jóvenes de nuestra comunidad</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
 </div>
+
+</section>
 <!--¿Que hacemos?-->
-<section class="verde">
+
+<section class="verde" id="verde-container">
         <div class="verde container-fluid ">
-        <h1 class="justify">¿Que hacemos?</h1>
+        <h1 class="justify" id="title-que">¿Qué hacemos?</h1>
         <h3>Trabajamos por los derechos de niños, niñas, adolescentes, jóvenes y mujeres en contexto de vulnerabilidad social, para construir una sociedad más justa e inclusiva para todos</h3>
         </div>
         <div class="verde2 container-fluid text-center">
@@ -47,10 +79,12 @@
                 </div>
         </div>
         <a class="btn btn-success btn2" href="/about">Conocenos</a>
+</div>
 </section>
 <!-- Donaciones -->
 <section class="blanco">
     <div class="donaciones container-fluid text-center">
+              <h1 class="title" id="title-que">Donaciones</h1>
         <div class="row">
             <!--Dona con el corazon-->
             <div class="corazon columna col-12 col-md-4">
@@ -69,62 +103,54 @@
             </div>
     </div>
 </section>
-
 <!--Noticias-->
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-        <h1>Noticias</h1>
-      <div class="carousel-item active">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
-            </div>
+<section class="noticias seccion-clara" id="news">
+  <div class="container text-center">
+    <h1 class="title" id="title-que">Noticias</h1>
+      <div class="row">
+          <!--Noticia1-->
+          <div class="columna col-12 col-md-4">
+            <img src="media/foto4.jpeg" width="220px">
+              <p class="experiencia-titulo">Titulo de la Noticia</p>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
+          </div>
+          <!--Noticia2-->
+          <div class="columna col-12 col-md-4">
+              <img src="media/foto1.jpeg" width="220px">
+              <p class="experiencia-titulo">Titulo de la noticia</p>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
+          </div>
+          <!--noticia3-->
+          <div class="columna col-12 col-md-4">
+            <img src="media/foto6.jpeg"  width="220px">
+              <p class="experiencia-titulo">Titulo de la noticia</p>
+              <a class="btn3 btn-info" href="{% url 'blog:posts' %}">Ver Mas</a>
+              </div>
           </div>
       </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto4.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info">Ver mas</a>
-            </div>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 20rem;">
-            <img src="media/foto6.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Titulo de la noticia</h5>
-              <a href="#" class="btn3 btn-info ">Ver mas</a>
-            </div>
-          </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+</section>
 
-  
 <!--foto-->
-<seccion class="foto">
+<seccion class="foto" id="foto">
 <div class="card text-bg-dark ">
     <img src="media/foto35.jpg" class="card-img" alt="">
     <div class="card-img-overlay">
       <h5 class="card-title">En corporacion primavera</h5>
       <p class="card-text">Las niñas y los niños se representan de manera simbólica y poética reconociendo sus habilidades y debilidades. para ayudarles con el acompañamiento de sus tareas. De esta forma aprendemos de sus iniciativas todos los días y gracias a esto las niñas, niños y adolescentes no se rinden, disfrutan de su barrio y sueñan con su futuro. 
-        y estamos felices de acompañarles en este proceso. 
-      </p>
+        y estamos felices de acompañarles.  </p>
     </div>
   </div>
 </seccion>
+<div class="form_body">
+  <div class="form">
+      <form method="POST">
+          {% csrf_token%}
+          {{form}}
+          <button type="submit" class="btn_form">Enviar</button>
+      </form>
+  </div>
+</div>
+
 
 {% include 'partials/footer.html'%}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

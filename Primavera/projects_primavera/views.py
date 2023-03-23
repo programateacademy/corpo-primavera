@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404,redirect
 from .models import Project
 from django.contrib.auth.decorators import permission_required
+from datetime import datetime
 
 def render_projects(request):
-    projects = Project.objects.all()
+    projects = Project.objects.filter(date__lte=datetime.now()).order_by('-date')
     return render(request, 'projects.html', {'projects':projects})
 
 def project_detail(request, project_id):

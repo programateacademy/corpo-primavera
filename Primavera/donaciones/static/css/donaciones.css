@@ -1,0 +1,98 @@
+#textodonaciones{
+    color: black;
+    font-size: 22px;
+    
+}
+
+#titledonaciones{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;}
+
+.blanco{
+    background-color: #C4F4B9;
+}
+
+#porquedonar-titulo {
+    color: #cd6200;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+#preguntas-titulo {
+    color: #279704;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+ #quehacemos-titulo{
+    color: #87045f;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #title-que{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #title-donar{
+    color: #87045f;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #text-donar{
+    color: black;
+    font-size: 20px;
+  }
+
+  #deseas-titulo{
+    background: #87045f;
+    color: #fff;
+    padding: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  #texto-donacion{
+    color: black;
+    font-size: 20px;
+  }
+  .container_form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+    form input{
+    width:250px;
+}
+    .form{
+    background-color: #87045F;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 650px;
+    border-radius: 7px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+    .btn_form{
+    background-color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}

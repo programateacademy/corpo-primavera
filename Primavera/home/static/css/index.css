@@ -1,3 +1,39 @@
+.banner{
+  z-index: -1;
+}
+
+
+#carousel-banner{
+  position:relative;
+  top:-2px;
+  z-index: -1;
+}
+
+#verde-container {
+  position:relative;
+  top: 10px;
+
+
+}
+hr{
+  color: #fff;
+}
+.titulo{
+  background: rgba(135, 4, 95, 0.6);
+  color: #fff;
+  padding: 10px;
+  font-size:xx-large;
+  font-weight: bold;
+
+}
+.parrafo{
+  background: #F5A601;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
 .btn {
         position:relative;
         left:45px;
@@ -12,12 +48,12 @@
     }
 
     h1{
-        color: #87045f;
-        font-size: 30px;
-        font-weight: bold;
-        align-items: center;
-        display:flex;
-        justify-content: center;
+      background: #87045f;
+      color: #fff;
+      padding: 20px;
+      font-size:xx-large;
+      font-weight: bold;
+      text-align: center;
     }
 
     h3{
@@ -37,6 +73,8 @@
         left:4px;
         top:0.5px;
     }
+
+    /*Que hacemos*/
 
     .verde2 {
         display: flex;
@@ -69,6 +107,8 @@
         font-size: 20px;
         font-weight: bold;
       }
+
+      /*Donaciones*/
 
       .donaciones .corazon-titulo {
         color: #279704;
@@ -105,44 +145,80 @@
         top:100px;
       }
 
-      .carousel-inner{
+      /*Carousel*/
+
+      #news{
         color: #279704;
         font-size: 20px;
         font-weight: bold;
         position:relative;
-        top:110px;
+        top:120px;
       }
 
-      .carousel-inner .btn3{
-        color:#87045f
-      }
+      #news .btn3{
+       
+          color:#87045f
+        }
+      
+      /*Card*/
 
       .foto .card-title{
         font-size: 25px;
         color: black;
         align-self: center;
         font-weight: bold;
-        padding: 10px;
+        
       }
 
       .foto .card-text{
         font-size: 20px;
         color:black;
-
         font-weight: bold;
         padding: 10px;
       }
 
-     .foto .card {
+     #foto {
+      display: block;
       position:relative;
-      top:120px;
+      top:150px;
       opacity: 75%;
      
      }
 
-    
+     /*Form*/
 
-    
+     .form_body{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+      form{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+  }
+      form input{
+      width:250px;
+  }
+      .form{
+      background-color: #87045F;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 650px;
+      border-radius: 7px;
+      margin-top: 200px;
+      margin-bottom: 100px;
+  }
+      .btn_form{
+      background-color: white;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+
     @media only screen and (max-width: 762px) {
         
         .verde{
@@ -183,19 +259,20 @@
         top:-230px;
         background-color: white;
       }
-
-      .carousel-inner{
+      #news{
+        font-size: 15px;
+        font-weight: bold;
         position:relative;
-        top:-200px;
-   } 
+        top:-150px;
+        }
 
    .foto .card {
     position:relative;
     top:-140px;
-   
-   }
+   }}
 
    @media only screen and (max-width: 662px) {
+   
     .foto .card-title{
       padding: 0;
       font-size: 20px;
@@ -208,6 +285,7 @@
   }
 
   @media only screen and (max-width: 489px) {
+    
     .foto .card-title{
       padding: 0;
       font-size: 12px;
@@ -218,3 +296,8 @@
       font-size: 11px;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    
+  }
+  

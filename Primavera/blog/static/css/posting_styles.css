@@ -1,37 +1,8 @@
-
-
-.form-color {
-    background-color: rgba(0, 128, 0, 0.555);
-}
-  
-
-.img-edit {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-lateral {
-    height: 50%;
-}
-
-.cont-input input {
-	background: none;
-    border-bottom: solid #87045F;
-	border-left: none;
-    border-right: none;
-    border-top: none!important;
-
-}
-
-.cont-input input:focus {
-	background:  rgba(135, 4, 96, 0.295);;
-    border-bottom: solid #87045F;
-	border-left: none;
-    border-right: none;
-    border-top: none!important;
-
+body {
+    background-image: url(../img/fond_new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
@@ -64,66 +35,3 @@
         color: #87045F;
 }
 
-#registration-form .form-control{
-	width: 90%;
-	padding: 12px 20px;
-	height: auto;
-}
-
-@media screen and (max-width: 700px){
-
-    
-	#registration-form .image{
-		width: 30%;
-	    background-position: 60%;
-	}
-
-	#registration-form .frm{
-		width: 70%;
-	}
-
-	#registration-form .form-control{
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 500px){
-	
-
-    .conten-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    #registration-form .image{
-		width: 392px;
-        height: 200px;
-	
-	}
-	#registration-form .frm{
-		width: 100%;
-	}
-
-	#registration-form h1{
-		text-align: center;
-	}
-
-	#registration-form .boton{
-		width: 100%;
-		margin-top: 20px;
-	}
-}
-
-
-@media screen and (max-width: 270px){
-    .conten-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    #registration-form .image{
-		width: 300px;
-        height: 250px;
-	
-	}
-}

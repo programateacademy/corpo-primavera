@@ -2,12 +2,38 @@
 {% load static %}
  <!--Banner-->
  {% block banner %}
- <div>
-  <img src="{% static 'img/foto39.jpg' %}" class="card-img img-fluid" alt="Imagen">
- </div>
- <div class="card card-banner mb-3" >
-    <div class="card-body text-center card-banner">
-      <p class="text-banner">Somos una organización no gubernamental que trabaja por los derechos de niños, adolescentes, jóvenes y mujeres en contexto de vulnerabilidad social.</p>
-    </div>
+
+    <div  id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/Carrusel-1.png' %}"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/Carrusel2.png' %}"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="titulo1">¡Últimas noticias de nuestra Corporación Primavera!</h5>
+          <p class="parrafo" >Estamos emocionados de compartir algunas de las últimas noticias y actualizaciones de nuestros esfuerzos.</p>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/Carrusel3.png'%}"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="titulo1">¡Últimas noticias de nuestra Corporación Primavera!</h5>
+          <p class="parrafo" >Estamos comprometidos con mejorar la vida de aquellos que más lo necesitan.</p>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  <hr>
 {% endblock %}

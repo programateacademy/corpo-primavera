@@ -14,7 +14,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{% static 'img/4.png' %}"  class="d-block w-100" alt="...">
+            <img src="{% static 'img/ca4.png' %}"  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="titulo">¡Últimas noticias de nuestra Corporación Primavera!</h5>
               <p class="parrafo" >En el corazón de nuestra misión se encuentran las mujeres jóvenes y los niños.</p>
@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="{% static 'img/6.png'%}"  class="d-block w-100" alt="...">
+            <img src="{% static 'img/ca6.png'%}"  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="titulo">¡Últimas noticias de nuestra Corporación Primavera!</h5>
               <p class="parrafo" >Estamos comprometidos con mejorar la vida de aquellos que más lo necesitan.</p>
@@ -53,8 +53,10 @@
                   <img src ="{{post.image.url}}" class="img-thumbnail" id="img-post" alt="{{post.title}}" >
                   <hr>
                   <h5 class="card-title" id="title-card">{{post.title}}</h5>
-                  <h6>{{post.date}}</h6>
                   <p class="card-text">{{post.description|safe}}</p>
+                  <hr>
                 </div>
               </div>
+
+{% include 'partials/footer.html'%}
 {% endblock %}
