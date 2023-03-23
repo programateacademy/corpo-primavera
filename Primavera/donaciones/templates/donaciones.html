@@ -1,1 +1,147 @@
-<h1>Create</h1>
+{% extends 'layaout.html' %}
+{% load static %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--CSS-->
+    <link type= 'text/css' href="{% static 'css/donaciones.css' %}" rel="stylesheet"> 
+</head>
+<body>
+    <!--Banner carrusel-->
+<section class="banner" id="banner">
+
+  <div id="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carrousel-in">
+          <div class="carousel-item active">
+            <img src="{% static 'img/Carrusel_1.png' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="{% static 'img/Carrusel-2.png' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">Uniendo fuerzas para un futuro mejor </h5>
+              <p class="parrafo" >Corporación Primavera marca la diferencia</p>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/Carrusel-3.png'%}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo">En el corazón de Medellín</h5>
+              <p class="parrafo" >Nuestra Corporación trabaja incansablemente para mejorar la vida de mujeres, niños y jóvenes de nuestra comunidad</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+</div>
+
+</section>
+<!--Donaciones-->
+
+<section class="donaciones" id="donaciones-container">
+        <div class="donaciones container-fluid ">
+        <h1 class="justify" id="titledonaciones">Donaciones</h1>
+        <h3 id="textodonaciones">Te has preguntado ¿Cómo ayudar a nuestra fundación? , si deseas realizar donaciones a mujeres, niños o niñas , desde una donación mínima mensual. Aqui encuentras la informacion.
+            Contribuye con su ayuda psicológica, apoya su formación empresarial, ayuda con su emprendimiento o brinda oportunidades laborales, te presentaremos varias alternativas para que puedas escoger y te subas con nosotros al ¡barco de las Oportunidades!</h3>
+        </div>
+        <div class="verde container-fluid text-center">
+            <div class="row">
+                <!--por que donar-->
+                <div class="mujeres columna col-12 col-md-4">
+                    <img class= "hero-inferior-imagen img-fluid" src="{% static 'images/8.png' %}" width="160" alt="icondecolores">
+                    <p class="porquedonar-titulo" id="porquedonar-titulo">¿Por que donar? </p>
+                </div>
+                <!--preguntas frecuentes-->
+                <div class="niños columna col-12 col-md-4">
+                    <img class= "hero-inferior-imagen img-fluid" src="{% static 'images/9.png' %}" width="160" alt="icondecolores">
+                    <p class="preguntas-titulo" id="preguntas-titulo">Preguntas frecuentes</p>
+                </div>
+                <!--que hacemos con tu ayuda-->
+                <div class="adolecentes columna col-12 col-md-4">
+                    <img class= "hero-inferior-imagen img-fluid" src="{% static 'images/10.png' %}" width="160" alt="icondecolores">
+                    <p class="quehacemos-titulo" id="quehacemos-titulo">¿Que hacemos con tu ayuda?</p>
+                </div>
+        </div>
+</div>
+</section>
+
+<!-- Donaciones -->
+<section class="blanco">
+    <div class="donaciones container-fluid text-center">
+              <h1 class="title" id="title-que">No te preocupes, aqui resolvemos tus dudas</h1>
+        <div class="row">
+            <!--porque donar-->
+            <div class="corazon columna col-12 col-md-4">
+                <h2 id="title-donar">¿Por que donar?</h2>
+                <img class= "corazon-imagen img-fluid" src="{% static 'images/foto28.jpeg' %}" width="160" alt="corazon">
+                <p id="text-donar">Porque estaras ayudando a las personas que lo necesitan para contribuir con su crecimiento personal y educacion.</p>
+            </div>
+            <!--Donde estamos ubicados-->
+            <div class="impacto columna col-12 col-md-4">
+                <h2 id="title-donar">¿Donde estamos ubicados?</h2>
+                <img class= "impacto-imagen img-fluid" src="{% static 'images/foto45.jpg' %}" width="160" alt="impacto">
+                <p id="text-donar">Nos encontramos en la ciudad de Medellín
+                  Dirección: Av. Palacé #68-05, Aranjuez, Medellín, Aranjuez, Medellín, Antioquia
+                  Teléfono: 42116097</p>
+            </div>
+            <!--que hacemos con tu ayuda-->
+            <div class="vidas columna col-12 col-md-4">
+                <h2 id="title-donar">¿Que hacemos con tu ayuda?</h2>
+                <img class= "vidas-imagen img-fluid" src="{% static 'images/foto47.jpg' %}" width="160" alt="corazon">
+                <p id="text-donar">Creamos espacios seguros de acompañamiento para las mujeres, niños y adolecentes de nuestra comunidad</p>
+            </div>
+    </div>
+</section>
+<!--Deseas hacer una donacion-->
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <img src="{% static 'images/blog-shaio-donacion.jpg' %}" class="card-img" alt="">
+        <h5 class="card-title" id="deseas-titulo">¿Deseas hacer una donacion en la corporacion primavera?</h5>
+        <p class="card-text" id="texto-donacion">Puedes ponerte en contacto con nosotros a traves de nuestras redes sociales, alli estaremos encantados de brindarte la informacion
+          necesaria, los metodos de pago y las alternativas por las cuales nos puedes ayudar.
+          Tambien nos puedes llamar al numero 42116097 o si prefieres que nos pongamos en contacto contigo tienes la opcion de llenar el formulario disponible en la pagina de la corporacion.
+        </p>
+        <h5 class="card-title">Gracias por ser parte del cambio</h5>
+        <a href="https://es-la.facebook.com/corporacion.primavera" class="btn btn-primary">Facebook</a>
+        <a href="https://twitter.com/corpoprimavera?lang=es" class="btn btn-primary">Twitter</a>
+        <a href="https://www.instagram.com/corpoprimavera/" class="btn btn-primary">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class= "corazon-imagen img-fluid" src="{% static 'images/foto28.jpeg' %}" class="card-img" alt="">
+        <h5 class="card-title" id="deseas-titulo">Por un futuro prometedor para los niños, niñas, mujeres y adolecentes de Medellin y Colombia</h5>
+        <img class= "corazon-imagen img-fluid" src="{% static 'images/logo_transparente.png' %}" width="180"class="card-img" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include 'partials/footer.html'%}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+{%endblock%}

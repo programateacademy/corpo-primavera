@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'blog.apps.BlogConfig',
     'projects_primavera.apps.Projects_primaveraConfig',
+    'donaciones.apps.DonacionesConfig',
    
 ]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -134,6 +135,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIR =(os.path.join(BASE_DIR, 'about/static/'),)
 STATICFILES_DIR =(os.path.join(BASE_DIR, 'home/static/'),)
+STATICFILES_DIR =(os.path.join(BASE_DIR, 'donaciones/static/'),)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
