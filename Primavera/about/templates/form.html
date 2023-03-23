@@ -2,9 +2,11 @@
 {%block form%}
 <div class="form_body">
     <div class="form">
+
         <form method="POST">
             {% csrf_token%}
             {{form}}
+            <input type="email" name="email" value="example@example.com">
             <button type="submit" class="btn">Enviar</button>
         </form>
     </div>

@@ -1,21 +1,59 @@
 {% include 'bookstores.html' %}
+{%load static%}
 <!--Vision-->
 {% block mission %}
-<div class="row" >
-  <div class="col-6 col-md-6">
-    <div class="card cvision">
-      <div class="card-body img-fluid" id="mission">
+<h4 class="tittle" id="title">¿Quienes Somos?</h4>
+<div class="row px-20">
+  <div class="col-4">
+    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#1">Corporación Primavera</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item1-1">Visión</a>
+          <a class="nav-link ms-3 my-1" href="#item1-2">Misión</a>
+        </nav>
+        <a class="nav-link" href="#item-2">¿Qué hacemos?</a>
+        <a class="nav-link" href="#item-3">¿Por qué lo hacemos?</a>
+        <a class="nav-link" href="#item-4">Información de Gestión y Estadisticas</a>
+      </nav>
+    </nav>
+  </div>
+
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+      <div id="1">
+        <h4 >Corporación Primavera</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem maxime illo libero atque. Quod nobis delectus, doloribus at non, molestiae ad corporis architecto et reprehenderit eaque mollitia error voluptates alias?</p>
+        <img src="{% static 'img/foto46.jpg' %}"  class="d-block w-100" alt="...">
+        <hr>
+      
+      </div>
+      <div id="item1-1">
+        <h4>Visión</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque qui expedita odit, dolorum fuga voluptatum aperiam soluta optio alias! Iusto dolor aspernatur obcaecati veniam quam debitis illum in hic?</p>
+        <img src="{% static 'img/Carrusel2.png' %}"  class="d-block w-100" alt="...">
+        <hr>
+      </div>
+      </div>
+      <div id="item1-2">
+        <h4>Misión</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima! Quidem provident iste quas sunt facilis esse minus, tempore eos voluptatum recusandae earum aspernatur quis ratione atque dolor fugit ipsum!</p>
+
+      </div>
+      <div id="item-2">
+        <h4>¿Qué hacemos?</h4>
+        <p>Reconocer la niña interior, traer al presente los sueños de la infancia, volver al origen y mirarse con amor, valorar lo logrado y priorizarse para sanar y crecer. conformar grupos con niños, niñas, adolescentes y cuidadoras y trabajar con ellos y ellas temas para afianzar sus vínculos familiares, promover habilidades para la vida y generar espacios de escucha mutua.</p>
+      </div>
+      <div id="item-3">
+        <h4>¿Por qué lo hacemos?</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cumque veniam inventore, animi delectus minus accusamus dicta natus quidem nulla adipisci deserunt accusantium iure
+        </div>
+      <div id="item-4">
+        <h4>Información de Gestión y Estadisticas</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cumque veniam inventore, animi delectus minus accusamus dicta natus quidem nulla adipisci deserunt accusantium iure
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-6 ">
-    <div class="card cvision">
-      <div class="card-header" id="text-general">Mision</div>
-      <div class="card-body" id="cgeneral">
-        <p class="card-text" id="p-general" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in vel aperiam harum quisquam modi, eligendi dolores atque quibusdam sit reprehenderit enim consequatur ipsam nulla doloribus vero at accusantium ratione?</p>
-      </div>
-    </div>
-  </div>
-</div>
-<hr>
+
 {% endblock %}
