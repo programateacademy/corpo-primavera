@@ -17,3 +17,29 @@
     font-weight: bold;
     display: flex;
 }
+
+#hello{
+color: green;
+font-size: medium;
+position: relative;
+left: 10px;
+top: 8px;
+}
+
+#salir{
+color: blueviolet;
+font-size:medium;
+font-weight: bold;
+position: relative;
+top: 8px;
+right: -20px;
+}
+
+#aqui{
+color: blueviolet;
+}
+
+#login{
+color: blueviolet;
+font-weight: bold;
+}
