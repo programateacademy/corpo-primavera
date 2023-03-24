@@ -38,19 +38,19 @@
 }
 
 #registration-form .image{
-	float:left;
-	background-image: url("../static/images/login.jpg");
-	height: 268px;
-	width: 50%;
-	background-size: cover;
-	background-position: 25%;
+	float: left;
+    background-image: url(../static/images/login.jpg);
+    height: 400px;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #registration-form .frm{
 	float:right;
     width: 50%;
     min-width: 250px;
-    padding: 0 35px;
+    padding: 50px;
     background-color: rgba(0, 128, 0, 0.295);
 }
 
@@ -92,7 +92,9 @@
     }
 
     #registration-form .image{
-		width: 392px;
+		width: 366px;
+        background-size: contain;
+        background-repeat: no-repeat;
 
 	
 	}
@@ -111,14 +113,14 @@
 }
 
 
-@media screen and (max-width: 200px){
+@media screen and (max-width: 280px){
     .conten-img {
         display: flex;
         justify-content: center;
     }
 
     #registration-form .image{
-		width: 187px;
-        height: 100px;
+		width: 260px;
+        height: 164px;
 	}
 }
