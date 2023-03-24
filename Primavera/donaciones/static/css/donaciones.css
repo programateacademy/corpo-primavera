@@ -96,3 +96,14 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
+#form-title{
+  background: #cd6200;
+  color: #fff;
+  padding: 30px;
+  font-size:xx-large;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top:150px;
+}

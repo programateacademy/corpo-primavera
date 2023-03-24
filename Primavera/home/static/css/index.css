@@ -159,22 +159,39 @@ hr{
        
           color:#87045f
         }
+
+      #info{
+        position: relative;
+        top:150px;
+      }  
+
       
       /*Card*/
 
-      .foto .card-title{
-        font-size: 25px;
-        color: black;
-        align-self: center;
-        font-weight: bold;
-        
+      #card-title{
+      background: #750453;
+      color: #fff;
+      padding: 20px;
+      font-size:xx-large;
+      font-weight: bold;
+      text-align: center;
       }
 
-      .foto .card-text{
-        font-size: 20px;
-        color:black;
+      #card-text{
+      font-size:x-large;
+      font-weight: bold;
+      text-align: center;
+      }
+
+      #form-title{
+        background: #cd6200;
+        color: #fff;
+        padding: 30px;
+        font-size:xx-large;
         font-weight: bold;
-        padding: 10px;
+        text-align: center;
+        position: relative;
+        top:150px;
       }
 
      #foto {
@@ -266,38 +283,13 @@ hr{
         top:-150px;
         }
 
-   .foto .card {
+   #foto{
     position:relative;
     top:-140px;
    }}
 
-   @media only screen and (max-width: 662px) {
    
-    .foto .card-title{
-      padding: 0;
-      font-size: 20px;
-    }
 
-    .foto .card-text{
-      padding: 0;
-      font-size: 15px;
-    }
-  }
 
-  @media only screen and (max-width: 489px) {
-    
-    .foto .card-title{
-      padding: 0;
-      font-size: 12px;
-    }
 
-    .foto .card-text{
-      padding: 0;
-      font-size: 11px;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    
-  }
-  
+ 
