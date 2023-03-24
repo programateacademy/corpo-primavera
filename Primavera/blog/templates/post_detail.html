@@ -45,6 +45,9 @@
         </button>
       </div>
 <!-- ...........................Noticias........................................ -->
+{% if perms.blog.add_post %}
+    <a href="{% url 'libPosting' %}">Agregar post</a>
+{% endif %}
 
         <div class="card">
                 <hr>
