@@ -1,49 +1,126 @@
-body{
-    background-color: #870460bf;
+
+.form-color {
+    background-color: rgba(0, 128, 0, 0.555);
 }
-input{
-    width: 250px;
-    height:30px;
-}
-form{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    background-color:#82F27E;
-    height: 600px;
-    width: 400px;
-    border-radius: 10px;
-}
-.form{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
+
+
+
+.cont-input input {
+	background: none;
+    border-bottom: solid #87045F;
+	border-left: none;
+    border-right: none;
+    border-top: none!important;
+    width: 90%;
+    padding: 12px 20px;
+    height: auto;
+    font-size: medium;
 
 }
-.btn{
-    margin-top: 40px;
-    margin-bottom:40px;
-    width: 100px;
-    height:37px;
-    border-radius: 10px;
-    background-color: #f5a801b6;
-    width:200px;
-    cursor: pointer;
-    color:whitesmoke;
-    border-color:#279704;
-    
-    
+
+.cont-input input:focus {
+	background:  rgba(135, 4, 96, 0.295);;
+    border-bottom: solid #87045F;
+	border-left: none;
+    border-right: none;
+    border-top: none!important;
+
 }
-.btn:hover{
-    border-width: 3px;
-    font-size: 16px;
+
+.cont-input label {
+    font-weight: 900;
+    font-size: medium;
 }
-@media screen and (max-width:800px){
-    form{
-        width: 300px;
+
+#registration-form{
+	
+	margin: 120px auto;
+}
+
+#registration-form .image{
+	float: left;
+    background-image: url(../static/images/login.jpg);
+    height: 400px;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#registration-form .frm{
+	float:right;
+    width: 50%;
+    min-width: 250px;
+    padding: 50px;
+    background-color: rgba(0, 128, 0, 0.295);
+}
+
+#registration-form .title-new {
+        font-weight: 900;
+        color: #87045F;
+}
+
+#registration-form .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+
+    
+	#registration-form .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form .frm{
+		width: 70%;
+	}
+
+	#registration-form .form-control{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	
+
+    .conten-img {
+        display: flex;
+        justify-content: center;
     }
 
+    #registration-form .image{
+		width: 366px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+	
+	}
+	#registration-form .frm{
+		width: 100%;
+	}
+
+	#registration-form h1{
+		text-align: center;
+	}
+
+	#registration-form .boton{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 280px){
+    .conten-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #registration-form .image{
+		width: 260px;
+        height: 164px;
+	}
 }
