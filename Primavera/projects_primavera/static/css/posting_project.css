@@ -1,20 +1,76 @@
-body {
-    background-image: url(../img/66.png);
-    background-repeat: no-repeat;
+
+.wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cont_general{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: rgba(135, 4, 96, 0.404);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+
+.side-image{
+    background-image: url("../img/11.png");
+    background-position: center;
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+.img_project{
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.right_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input_border {
+    background: none;
+    border: none;
+    border-bottom: solid #87045F;
+}
+
+.input_border:focus {
+    background: none;
+    border: none;
+    border-bottom: solid #87045F;
+}
+
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+    background-color: none;
+}
+.input-box .title_create_proyect{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
 }
 
 
-.form-color {
-    background: rgba(0, 128, 0, 0.555);
-}
 
-.title-new {
-    font-weight: 900;
-    color: #87045F;
-}
 
-.add {
-    font-size: 30px;
-}
+
