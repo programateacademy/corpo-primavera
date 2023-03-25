@@ -1,35 +1,35 @@
-{% include "layaout.html" %}
-{% load static %}
 {% include "project_posting/libprojects.html" %}
 {% block new_projects %}
-<div class="container justify-content-center align-items-center p-5 ">
-    <div class="row vh-100 justify-content-center align-items-center ">
-        <div class="col-xs-3 col-lg-6 form-color p-4 border border-success rounded">    
-            <div class="justify-content-center">
-            <h1 class="text-center title-new"> Crear Proyecto Nuevo </h1>
-            <img src="{% static 'img/project.png' %}" class="img-fluid" alt="Imagen">
+<div class="wrapper p-5">
+    <div class="container main">
+        <div class="row cont_general">
+            <div class="col-md-6 side-image">
+                <!-------Image-------->
             </div>
-            <form method="POST" enctype="multipart/form-data" id="image_form">
-                {% csrf_token %}
-                <div class="form-group mb-3 fw-bold text-white">
-                    <label for="title">Título</label>
-                    <input type="text" id="title" class="form-control" name="title">
-        
-                    <label for="description">Descripción</label>
-                    <input type="text" id="description" class="form-control" name="description">
+            <div class="col-md-6 right_cont">
+                 <div class="input-box">
+                    <h1 class="title_create_proyect text-white">Publicar Proyecto</h1>
+                    <form method="POST" enctype="multipart/form-data" id="image_form">
+                        {% csrf_token %}
+                        <div class="form-group mb-3 fw-bold text-white">
+                            <label for="title">Título</label>
+                            <input type="text" id="title" class="form-control input_border" name="title">
                 
-                    <label for="image">Selecciona una imagen: </label>
-                    <input type="file" id="image" class="form-control" name="image">
-                
-                    <label for="date">Fecha</label>
-                    <input type="date" id="date" class="form-control" name="date">
-                </div> 
-                <button type="submit" class="btn btn-success fw-bold" form="image_form">Publicar</button>
-            </form>
-        </div>    
+                            <label for="description">Descripción</label>
+                            <input type="text" id="description" class="form-control input_border" name="description">
+                        
+                            <label for="image">Selecciona una imagen: </label>
+                            <input type="file" id="image" class="form-control input_border" name="image">
+                        
+                            <label for="date">Fecha</label>
+                            <input type="date" id="date" class="form-control input_border" name="date">
+                        </div> 
+                        <button type="submit" class="btn btn-success fw-bold submit" form="image_form">Publicar</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
     </div>
 </div>
-{% include 'partials/footer.html'%}
-</body>
-</html>
 {% endblock %}
+{% include 'partials/footer.html'%}

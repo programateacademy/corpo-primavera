@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404,redirect
-from .models import Project
+from .models import Project, Activities
+from .forms import ActivitiesForm
 from django.contrib.auth.decorators import permission_required
 from datetime import datetime
+
 
 def render_projects(request):
     projects = Project.objects.filter(date__lte=datetime.now()).order_by('-date')
@@ -23,3 +25,18 @@ def posting(request):
         return redirect('projects_primavera:projects')
         
     return render(request, 'project_posting/postingProject.html',{})
+
+def listactivities(request):
+    activities = Activities.objects.all()
+    return render (request, 'project_posting/listactivities.html', {"activities": activities} )
+
+@permission_required('projects_primavera.add_activities')
+def activities(request):
+    if request.method == 'POST':
+        form = ActivitiesForm(request.POST)
+        if form.is_valid():
+           form.save()
+        return redirect('projects_primavera:activities')
+    else:
+        form = ActivitiesForm()
+        return render(request, "project_posting/activities.html", {'form':form}) 

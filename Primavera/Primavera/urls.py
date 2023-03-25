@@ -19,6 +19,7 @@ from Register import views as registerViews
 from django.conf.urls.static import static
 from django.conf import settings
 from blog import urls
+from projects_primavera.views import *
 
 
 urlpatterns = [
