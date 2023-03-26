@@ -1,9 +1,12 @@
 table {
     background-color: rgba(38, 151, 4, 0.37);
+    border: #87045F!important;
+    border-collapse: separate;
 }
 
 thead {
-    background: #5c1717!important;
+    background: #87046093!important;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {

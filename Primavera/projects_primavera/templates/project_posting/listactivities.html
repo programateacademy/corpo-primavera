@@ -1,35 +1,58 @@
 {% include "project_posting/libprojects.html" %}
 {% block projects_management %}
 
-<div class="p-1">
-    <h5 class="text-center">Lista de actividades</H5>
-    <hr>
-    <table  class="table table-bordered text-center color_table" id="tableAct">
-        <thead class="table-secondary ">
-            <tr>
-                <th >Actividad</th>
-                <th>Observacion</th>
-                <th>Fecha de revision</th>
-                <th>Proyecto</th>
-                <th colspan="3">Acciones</th>
-            </tr> 
-        </thead> 
-        <tbody > 
-            {% for activities in activities %}
-            <tr>
-                <td class="fila">{{ activities.activity }}</td>
-                <td class="fila">{{ activities.observation }}</td>
-                <td class="fila">{{ activities.endate }}</td>
-                <td class="fila">{{ activities.title }}</td>
-                <td class="accion">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value=""  id="flexCheckChecked">
-                    </div>
-                </td>
-            </tr> 
-             {% endfor %}
-        </tbody>     
-    </table> 
-<div>                 
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th class="centered">Actividad</th>
+                            <th class="centered">Observacion</th>
+                            <th class="centered">Fecha de revision</th>
+                            <th colspan="2"  class="centered">Proyecto</th>
+                            <th colspan="2"  class="centered">Terminada</th>
+                            <th colspan="2"  class="centered">Pendiente</th>
+                            <th colspan="2"  class="centered">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody > 
+                        {% for activities in activities %}
+                        <tr>
+                            
+                            <td class="fila">{{ activities.activity }}</td>
+                            <td class="fila">{{ activities.observation }}</td>
+                            <td class="fila">{{ activities.endate }}</td>
+                            <td colspan="2"  class="fila">{{ activities.title }}</td>
+                            <td colspan="2">
+                                <div >
+                                <input class="form-check-input" type="checkbox" name="action" value="" onclick="completed(this)" id="flexCheckChecked">
+                                </div>
+                            </td>
+                            <td colspan="2" >
+                                <div >
+                                <input class="form-check-input" type="checkbox" name="action" value="" onclick="pending(this)" id="flexCheckChecked">
+                                </div>
+                            </td>
+                            <td colspan="2" >
+                                <div >
+                                <a href="#" class="btn btn-danger">Eliminar</a>
+                                </div>
+                            </td>
+
+                            
+                        </tr> 
+                         {% endfor %}
+                    </tbody>  
+                </table>
+                
+            </div>
+        </div>
+    </div> 
+</div>    
+
+
+                 
 {% endblock %}
 {% include 'partials/footer.html'%}
