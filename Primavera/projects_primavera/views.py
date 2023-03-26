@@ -40,3 +40,7 @@ def activities(request):
     else:
         form = ActivitiesForm()
         return render(request, "project_posting/activities.html", {'form':form}) 
+
+def delete(request, activities_id):
+    print(activities_id)
+    return redirect('projects_primavera:listactivities')
