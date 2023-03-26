@@ -8,7 +8,8 @@ def render_posts(request):
     posts = Post.objects.filter(date__lte=datetime.now()).order_by('-date')
     return render(request, 'posts.html', {'posts':posts})
 
-# Función que crea un id por noticia en la url del navegador y en el caso de que no exista proporcione un error 404
+# Función que crea un id por noticia en la url del navegador y ¡
+# en el caso de que no exista proporcione un error 404
 
 def post_detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
@@ -23,7 +24,8 @@ def posting(request):
         description = request.POST['description']
         image = request.FILES['image']
         date = request.POST['date']
-        new = Post.objects.create(image = image, title = title, description = description, date = date)
+        new = Post.objects.create(image = image, title = title,
+                                description = description, date = date)
         new.save()
         return redirect('blog:posts')
     return render(request, 'post_posting/posting.html',{})

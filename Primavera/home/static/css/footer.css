@@ -4,6 +4,13 @@
     align-items: center;
     background-color: #279704;
 }
+
+@media screen and (max-width: 300px){
+
+    hr {
+        width: 285px;
+    }
+}
 .text-footer {
     color: white;
 }
@@ -30,7 +37,6 @@ ul{
     content: '';
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
     border-radius: 50%;
     z-index: -1;

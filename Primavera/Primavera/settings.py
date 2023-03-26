@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'blog.apps.BlogConfig',
     'projects_primavera.apps.Projects_primaveraConfig',
+    'donaciones.apps.DonacionesConfig',
+   
 ]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ["security.W019"]
@@ -91,9 +93,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'test_db.sqlite3',
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -133,6 +138,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIR =(os.path.join(BASE_DIR, 'about/static/'),)
 STATICFILES_DIR =(os.path.join(BASE_DIR, 'home/static/'),)
+STATICFILES_DIR =(os.path.join(BASE_DIR, 'donaciones/static/'),)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
