@@ -1,0 +1,35 @@
+{% include "project_posting/libprojects.html" %}
+{% block projects_management %}
+
+<div class="p-1">
+    <h5 class="text-center">Lista de actividades</H5>
+    <hr>
+    <table  class="table table-bordered text-center color_table" id="tableAct">
+        <thead class="table-secondary ">
+            <tr>
+                <th >Actividad</th>
+                <th>Observacion</th>
+                <th>Fecha de revision</th>
+                <th>Proyecto</th>
+                <th colspan="3">Acciones</th>
+            </tr> 
+        </thead> 
+        <tbody > 
+            {% for activities in activities %}
+            <tr>
+                <td class="fila">{{ activities.activity }}</td>
+                <td class="fila">{{ activities.observation }}</td>
+                <td class="fila">{{ activities.endate }}</td>
+                <td class="fila">{{ activities.title }}</td>
+                <td class="accion">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value=""  id="flexCheckChecked">
+                    </div>
+                </td>
+            </tr> 
+             {% endfor %}
+        </tbody>     
+    </table> 
+<div>                 
+{% endblock %}
+{% include 'partials/footer.html'%}

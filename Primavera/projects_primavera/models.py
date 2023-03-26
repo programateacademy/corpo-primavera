@@ -7,3 +7,15 @@ class Project(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to ="projects_primavera/images/")
     date = models.DateField(datetime.date.today)
+    def __str__(self):
+        return self.title
+
+class Activities(models.Model):
+    activity = models.CharField(max_length=100)
+    observation = models.TextField()
+    endate = models.DateField(datetime.date.today)
+    title = models.ForeignKey(Project, on_delete=models.CASCADE)  
+    def __str__(self):
+        return self.title
+
+

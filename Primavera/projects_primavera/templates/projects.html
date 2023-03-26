@@ -41,7 +41,13 @@
     <h5 class="card-header"id="title-header">Proyectos Corporación Primavera</h5>
     <hr>
     {% if user.is_superuser%}
-    <a class="nav-link" href="{% url 'projects_primavera:postingProject' %}"><button type="button" class="btn btn-success"><i class="bi bi-plus-circle-dotted add"></i> Nuevo Proyecto </button></a>
+    <a class="nav-link" href="{% url 'projects_primavera:postingProject' %}">
+      <button type="button" class="btn btn-success">
+        <i class="bi bi-plus-circle-dotted add"></i> Publicar Nuevo Proyecto </button></a>
+        <a class="nav-link" href="{% url 'projects_primavera:activities' %}">
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-plus-circle-dotted add"></i> Crear actividades</button></a>
+
     {% else %}
 
     {% endif %}

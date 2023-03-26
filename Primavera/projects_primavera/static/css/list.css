@@ -1,0 +1,39 @@
+table {
+    background-color: rgba(38, 151, 4, 0.37);
+}
+
+thead {
+    background: #5c1717!important;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #5c1717;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+.accion {
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,39 @@
+{% include "project_posting/libprojects.html" %}
+{% block activities_management %}
+<div class="text-link">
+    <a href="{% url 'projects_primavera:listactivities' %}" class="btn btn btn-success btn-lg active" role="button" aria-pressed="true">Gestion de actividades</a>
+</div>    
+<div class="wrapper p-5">
+    <div class="container main">
+        <div class="row cont_general">
+            <div class="col-md-6 side-image">
+                <!-------Image-------->
+            </div>
+            <div class="col-md-6 right_cont">
+                 <div class="input-box">
+                    <h1 class="title_create_proyect text-white">Actividades</h1>
+                    <form method="POST" enctype="multipart/form-data" id="image_form">
+                        {% csrf_token %}
+                        <div class="form-group mb-3 fw-bold cont-input text-white">
+                            <label for="activity">Actividad</label>
+                            <input type="text" id="activity" class="form-control input_border" name="activity">
+                
+                            <label for="observation">Observacion</label>
+                            <input type="text" id="observation" class="form-control input_border" name="observation">
+                    
+                            <label for="endate">Fecha entrega</label>
+                            <input type="date" id="endate" class="form-control input_border" name="endate">
+                             
+                            <label for="endate col-12">Proyecto</label>
+                            {{ form.title }}
+                    
+                        </div> 
+                        <button type="submit" class="btn btn-success fw-bold submit" form="image_form">Crear</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% include 'partials/footer.html'%}
