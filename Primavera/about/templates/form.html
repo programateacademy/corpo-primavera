@@ -1,15 +1,15 @@
 {% include 'bookstores.html' %}
 {%block form%}
 <div class="form_body">
-    <div class="form">
+    <div class="form  p-2">
 
         <form method="POST">
             {% csrf_token%}
             {{form}}
-            <input type="email" name="email" value="example@example.com">
             <button type="submit" class="btn">Enviar</button>
         </form>
     </div>
 </div>
+<hr>
 
 {%endblock%}

@@ -35,15 +35,10 @@ hr{
 
 
 .btn {
-        position:relative;
-        left:45px;
-        top:-80px;
         background-color: #279704;
-        border-radius: 25%;
         margin: 10px;
-        display:flex;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        font-weight: bold; 
+        font-weight: bold;
         font-size: 18px;
     }
 
@@ -68,11 +63,11 @@ hr{
         
     }
     
-    .btn2{
+/*     .btn2{
         position:relative;
         left:4px;
         top:0.5px;
-    }
+    } */
 
     /*Que hacemos*/
 
@@ -114,7 +109,6 @@ hr{
         color: #279704;
         font-size: 20px;
         font-weight: bold;
-       ;
       }
 
       .donaciones .impacto-titulo {
@@ -127,9 +121,8 @@ hr{
         color: #cd6200;
         font-size: 20px;
         font-weight: bold;
-       
       }
-
+/*
       .donaciones .corazon {
         position:relative;
         top:100px;
@@ -143,16 +136,20 @@ hr{
       .donaciones .vidas{
         position:relative;
         top:100px;
+      } */
+
+      .donaciones-malla{
+        height: 350px;
       }
 
-      /*Carousel*/
+      /*Carousel noticias*/
 
       #news{
         color: #279704;
         font-size: 20px;
         font-weight: bold;
-        position:relative;
-        top:120px;
+        /* position:relative; */
+        /* top:120px; */
       }
 
       #news .btn3{
@@ -190,14 +187,14 @@ hr{
         font-size:xx-large;
         font-weight: bold;
         text-align: center;
-        position: relative;
-        top:150px;
+        /* position: relative; */
+        /* top:150px; */
       }
 
      #foto {
       display: block;
-      position:relative;
-      top:150px;
+/*       position:relative;
+      top:150px; */
       opacity: 75%;
      
      }
@@ -215,25 +212,28 @@ hr{
       align-items: center;
       color: white;
       font-weight: bold;
+
   }
       form input{
-      width:250px;
+      max-width:250px;
   }
       .form{
       background-color: #87045F;
       display:flex;
       align-items: center;
       justify-content: center;
-      width: 400px;
-      height: 650px;
-      border-radius: 7px;
-      margin-top: 200px;
-      margin-bottom: 100px;
-  }
+      /* height: 650px; */
+      border-radius: 30px;
+      /* margin-top: 200px;
+      margin-bottom: 100px;*/
+      }
       .btn_form{
       background-color: white;
       margin-top: 20px;
       cursor: pointer;
+      color: #87045F;
+      font-weight: bold;
+      border-radius: 5px;
   }
 
     @media only screen and (max-width: 762px) {
@@ -242,23 +242,8 @@ hr{
             padding: 2rem 2rem 2rem 2rem;
             
         }
-        
-        .verde2 .niños {
-            position: relative;
-            left:80px;
-            top:-25px;
-          }
-
-          .verde2 .adolecentes {
-            position: relative;
-            right:85px;
-            top: -230px;
-          }
-
-          .btn2{
-            position:relative;
-            left:4px;
-            top:-240px;
+        .donaciones-malla{
+          height: 100%;
         }
 
       .donaciones .corazon {
@@ -273,23 +258,26 @@ hr{
     
       .blanco{
         position: relative;
-        top:-230px;
+        /* top:-230px; */
         background-color: white;
       }
       #news{
         font-size: 15px;
         font-weight: bold;
-        position:relative;
-        top:-150px;
+        /* position:relative;
+        top:-150px; */
         }
-
+/* 
    #foto{
     position:relative;
     top:-140px;
-   }}
+   } */
+  }
+  @media only screen and (max-width: 560px) {
 
-   
+    form{
+      font-size: 3vw;
+    }
+}
 
 
-
- 

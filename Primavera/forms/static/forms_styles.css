@@ -1,9 +1,9 @@
 /* Estilo base */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.form_body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
   
   form {
     display: flex;
@@ -11,13 +11,11 @@ body {
     align-items: center;
     color: white;
     font-weight: bold;
-    width: 100%;
-    max-width: 400px;
+    /* width: 100%; */
+    /* max-width: 400px; */
   }
-  
   form input {
-    width: 100%;
-    max-width: 300px;
+    max-width:250px;
   }
   
   .form {
@@ -25,39 +23,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 430px;
-    height: 450px;
-    border-radius: 7px;
+    /* width: 100%; */
+    /* max-width: 430px; */
+    border-radius: 30px;
   }
-  
-  .btn {
+  .btn{
+    background-color: white;
     margin-top: 20px;
     cursor: pointer;
-  }
-  
+    color: #87045F;
+}
+
+
   /* Media queries */
-  @media screen and (max-width: 400px) {
-    form input {
-      max-width: 100%;
+  @media only screen and (max-width: 560px) {
+
+    form{
+      font-size: 3vw;
     }
-  }
-  @media screen and (max-width: 600px) {
-    .form {
-      width: 100%;
-      height: auto;
-      border-radius: 0;
-    }
-    form input {
-      max-width: 100%;
-    }
-  }@media screen and (max-width: 600px) {
-  .form {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-  }
-  form input {
-    max-width: 100%;
-  }
 }
