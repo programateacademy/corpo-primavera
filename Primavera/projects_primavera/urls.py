@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import render_projects, project_detail, activities,listactivities
+from .views import render_projects, project_detail, activities,listactivities,delete
 from . import views
  
 app_name = "projects_primavera"
@@ -10,4 +10,7 @@ urlpatterns = [
     path('postingProject',views.posting, name='postingProject'),
     path('activities',views.activities, name='activities'),
     path('listactivities',listactivities, name='listactivities'),
+    path('delete/<int:activities_id>',views.delete, name='delete'),
+
+
     ]
