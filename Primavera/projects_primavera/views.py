@@ -41,6 +41,9 @@ def activities(request):
         form = ActivitiesForm()
         return render(request, "project_posting/activities.html", {'form':form}) 
 
-def delete(request, activities_id):
-    print(activities_id)
-    return redirect('projects_primavera:listactivities')
+@permission_required('projects_primavera.delete_activities')
+def delete(request, id):
+        deleteAc = Activities.objects.get(id=id);      
+        deleteAc.delete()
+        return redirect('projects_primavera:listactivities')
+

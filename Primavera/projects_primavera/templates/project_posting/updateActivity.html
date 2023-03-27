@@ -1,0 +1,58 @@
+{% include "project_posting/libprojects.html" %}
+{% block activities_management %}
+<div class="text-link">
+    <a href="{% url 'projects_primavera:listactivities' %}" class="btn btn btn-success btn-lg active" role="button" aria-pressed="true">Gestion de actividades</a>
+</div>    
+<div class="wrapper p-5">
+    <div class="container main">
+        <div class="row cont_general">
+            <div class="col-md-6 side-image">
+                <!-------Image-------->
+            </div>
+            <div class="col-md-6 right_cont">
+                 <div class="input-box">
+                    <h1 class="title_create_proyect text-white">Actualizar</h1>
+                    <form method="POST" enctype="multipart/form-data"  action="/actualizarActividad/" id="image_form">
+                        {% csrf_token %}
+                        <input type="hidden" name="id" value="{{data.id}}">
+                        <div class="form-group mb-3 fw-bold cont-input text-white">
+                            <label for="activity">Actividad</label>
+                            <input type="text" id="activity" class="form-control input_border" value="{{data.activity}}" name="activity">
+                
+                            <label for="observation">Observacion</label>
+                            <input type="text" id="observation" class="form-control input_border" value="{{data.observation}}" name="observation">
+                    
+                            <label for="endate">Fecha entrega</label>
+                            <input type="date" id="endate" value="{{data.endate}}" class="form-control input_border" name="endate">
+                             
+                            <br>
+                            <label for="endate col-12">Proyecto</label>
+                            {{data.title}}
+                            <br>
+                            <br>
+                            <div >
+                                {% if data.approved == 1 %}
+                                 <input class="form-check-input" type="checkbox" name="complit"   value="" onclick="completed(this)" id="flexCheckChecked" checked>&nbsp; Completa
+                                {% else %}
+                                <input class="form-check-input" type="checkbox" name="complit"   value="" onclick="completed(this)" id="flexCheckChecked" >&nbsp; Completa
+                                {% endif %}
+                            </div>
+                            <br>
+                            <div >
+                                {% if  data.pending == 1 %}
+                                 <input class="form-check-input" type="checkbox" name="pending"   value="" onclick="completed(this)" id="flexCheckChecked" checked>&nbsp; Pendiente
+                                {% else %}
+                                <input class="form-check-input" type="checkbox" name="pending"   value="" onclick="completed(this)" id="flexCheckChecked" >&nbsp; Pendiente
+                                {% endif %}
+                            </div>
+
+                        </div> 
+                        <button type="submit" class="btn btn-success fw-bold submit" form="image_form">Actualizar</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% include 'partials/footer.html'%}
