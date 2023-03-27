@@ -10,3 +10,4 @@ urlpatterns = [
     path("<int:post_id>", post_detail, name ="post_detail"),
     path('posting/', views.posting,name="posting")
     ]
+

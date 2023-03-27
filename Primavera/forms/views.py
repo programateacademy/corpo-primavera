@@ -14,7 +14,7 @@ def index(request):
         if contact_form.is_valid():
             contact_form.save()
             return redirect(reverse('index')+'?ok')
-        
+
         else:
             return redirect(reverse('index')+'?error')
 

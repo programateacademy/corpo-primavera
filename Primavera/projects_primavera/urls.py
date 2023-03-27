@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import render_projects, project_detail, activities,listactivities,delete
 from . import views
-
+ 
 app_name = "projects_primavera"
 
 urlpatterns = [
