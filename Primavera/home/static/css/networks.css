@@ -4,27 +4,30 @@
   top: 80%;
   right: 0;
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 10000; /* aumentado el valor de z-index */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: rgba(135, 4, 95, 0.8);
-
 }
 
 .btn-group-vertical a i {
-  display: block;
-    color: #fff;
-    font-size: 2rem;
-    padding: .5rem;
+  font-size: 2vw;
+  padding: .5rem;
+  color: aliceblue;
 }
 
 @media screen and (max-width: 768px) {
   #group {
+    position: fixed;
+    right: 0;
+    z-index: 10000; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     top: 60%;
-    right: 5%;
     left: auto;
     padding: 5px;
+    transform: translateY(-50%);
   }
 
   .btn-group-vertical a i {
@@ -35,10 +38,16 @@
 
 @media screen and (max-width: 576px) {
   #group {
-    top: 50%;
-    right: 5%;
+    position: fixed;
+    right: 0;
+    z-index: 90000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 60%;
     left: auto;
     padding: 5px;
+    transform: translateY(-50%);
   }
 
   .btn-group-vertical a i {

@@ -1,0 +1,64 @@
+
+#mission {
+    background-image: url('../img/foto7.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+#tittle{
+  background:  #87045F;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size:3vw;
+}
+
+h4{
+    background:  #87045F;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size:large;
+  }
+
+a.nav-link {
+  color: #87045F;
+}
+p{
+  font-size: 2vw;
+}
+
+
+
+  @media (max-width: 768px) {
+    .flex-md-row {
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+    }
+    .align-items-start {
+      align-items: flex-start !important;
+    }
+    #text-general{
+      font-size: 3vw;
+
+    }
+    #p-general{
+        font-size:3vw;
+    }
+
+}
+@media (max-width: 767px) {
+    .card {
+      height: 300px;
+    }
+  }
+  @media (max-width: 768px) {
+    #navbar-example3 {
+      font-size: 4vw;
+    }
+  }
+
+

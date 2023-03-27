@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+     <link rel="stylesheet" href="path/to/intlTelInput.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link rel="stylesheet" href="{% static 'forms_styles.css'%}">
+    <link rel="stylesheet" href="{% static 'css/intlTelInput.css' %}">
+    <style>.iti__flag {background-image: url("{% static 'img/flags.png' %}");} @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {.iti__flag {background-image: url("{% static 'img/flags@2x.png' %}");}}</style>
+    <script src="{% static 'js/libphonenumber-js.min.js' %}"></script>
+    <script src="{% static 'js/phone-input.js' %}"></script>
+
     <title>Form</title>
 </head>
 <body>
     <div class="form">
         <form  method="POST">
+            <h1>Contactenos</h1>
             {% csrf_token%}
             {{form}}
             <button type="submit" class="btn">Enviar</button>
