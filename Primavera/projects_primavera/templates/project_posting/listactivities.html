@@ -14,6 +14,7 @@
                             <th colspan="2"  class="centered">Proyecto</th>
                             <th colspan="2"  class="centered">Terminada</th>
                             <th colspan="2"  class="centered">Pendiente</th>
+                            <th colspan="2"  class="centered">Actualizar</th>
                             <th colspan="2"  class="centered">Eliminar</th>
                         </tr>
                     </thead>
@@ -27,21 +28,27 @@
                             <td colspan="2"  class="fila">{{ activities.title }}</td>
                             <td colspan="2">
                                 <div >
-                                <input class="form-check-input" type="checkbox" name="action" value="" onclick="completed(this)" id="flexCheckChecked">
+                                    {% if activities.approved == 1 %}
+                                     <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" checked>
+                                    {% else %}
+                                    <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" >
+                                    {% endif %}
                                 </div>
                             </td>
                             <td colspan="2" >
                                 <div >
-                                <input class="form-check-input" type="checkbox" name="action" value="" onclick="pending(this)" id="flexCheckChecked">
+                                    {% if  activities.pending == 1 %}
+                                     <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" checked>
+                                    {% else %}
+                                    <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" >
+                                    {% endif %}
                                 </div>
                             </td>
                             <td colspan="2" >
                                 <div >
-                                <a href="#" class="btn btn-danger">Eliminar</a>
+                                <a href="deleteActivity/{{activities.id}}" class="btn btn-danger">Eliminar</a>
                                 </div>
-                            </td>
-
-                            
+                            </td>        
                         </tr> 
                          {% endfor %}
                     </tbody>  
