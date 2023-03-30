@@ -45,9 +45,14 @@
         </button>
       </div>
 <!-- ...........................Noticias........................................ -->
-{% if perms.blog.add_post %}
-    <a href="{% url 'libPosting' %}">Agregar post</a>
-{% endif %}
+
+    <a href="{% url 'libPosting.html' %}">Agregar post</a>
+    <hr>
+    {% if user.is_superuser%}
+    <a class="nav-link" href="{% url 'blog:posting' %}"><button type="button" class="btn btn-success"><i class="bi bi-plus-circle-dotted add"></i> Nueva Noticia </button></a>
+    {% else %}
+    
+    {% endif %}
 
         <div class="card">
                 <hr>
