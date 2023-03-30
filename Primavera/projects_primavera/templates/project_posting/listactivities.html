@@ -29,21 +29,26 @@
                             <td colspan="2">
                                 <div >
                                     {% if activities.approved == 1 %}
-                                     <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" checked>
+                                     <input class="form-check-input" type="checkbox" name="action"   value=""  id="flexCheckChecked" checked>
                                     {% else %}
-                                    <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" >
+                                    <input class="form-check-input" type="checkbox" name="action"   value=""  id="flexCheckChecked" >
                                     {% endif %}
                                 </div>
                             </td>
                             <td colspan="2" >
                                 <div >
                                     {% if  activities.pending == 1 %}
-                                     <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" checked>
+                                     <input class="form-check-input" type="checkbox" name="action"   value="" onclick="pending(this)" id="flexCheckChecked" checked>
                                     {% else %}
-                                    <input class="form-check-input" type="checkbox" name="action"   value="" onclick="completed(this)" id="flexCheckChecked" >
+                                    <input class="form-check-input" type="checkbox" name="action"   value="" onclick="pending(this)" id="flexCheckChecked" >
                                     {% endif %}
                                 </div>
                             </td>
+                            <td colspan="2" >
+                                <div >
+                                <a href="edit/{{activities.id}}" class="btn btn-success">Modificar</a>
+                                </div>
+                            </td> 
                             <td colspan="2" >
                                 <div >
                                 <a href="deleteActivity/{{activities.id}}" class="btn btn-danger">Eliminar</a>

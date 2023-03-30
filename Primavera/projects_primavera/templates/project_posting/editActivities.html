@@ -1,0 +1,45 @@
+{% include "project_posting/libprojects.html" %}
+{% block activities_management %}
+<div class="text-link">
+    <a href="{% url 'projects_primavera:listactivities' %}" class="btn btn btn-success btn-lg active" role="button" aria-pressed="true">Gestion de actividades</a>
+</div>    
+<div class="wrapper p-5">
+    <div class="container main">
+        <div class="row cont_general">
+            <div class="col-md-6 side-image">
+                <!-------Image-------->
+            </div>
+            <div class="col-md-6 right_cont">
+                 <div class="input-box">
+                    <h1 class="title_create_proyect text-white">Modificar Actividad</h1>
+                    <form method="POST" enctype="multipart/form-data" action="/upda/{{ data_edit.id }}" id="edit_activi" >
+                        {% csrf_token %}
+                        <div class="form-group mb-3 fw-bold cont-input text-white">
+
+                            <input type="hidden"  value="{{ data_edit.id }}" name="id">
+                
+                            <label for="activity">Actividad</label>
+                            <input type="text" id="activity" class="form-control input_border" value="{{ data_edit.activity }}" name="activity">
+                
+                            <label for="observation">Observacion</label>
+                            <input type="text" id="observation" class="form-control input_border" value="{{ data_edit.observation }}" name="observation">
+                        
+           
+                            <br>
+                            <label for="approved">Terminado</label>
+                            <input type="checkbox" id="approved" check="{{ data_edit.approved }}"   name="approved"> 
+
+                            <br>
+                            <label for="pending">Pendiente</label>
+                            <input type="checkbox" id="pending" checked="{{ data_edit.pending }}"  name="pending" > 
+
+                        </div> 
+                        <button type="submit" class="btn btn-success fw-bold submit" id="edit_activi">Crear</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% include 'partials/footer.html'%}
